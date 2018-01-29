@@ -10,6 +10,8 @@
 */
 package xyz.wchy.action.edit;
 
+import java.awt.event.ActionEvent;
+
 import xyz.wchy.action.base.BaseAction;
 
 /**
@@ -31,6 +33,16 @@ import xyz.wchy.action.base.BaseAction;
 * @Date: 2018年1月21日 上午12:45:41.
 * 
 */
-public class EditFindNextAction extends BaseAction {
+public class EditFindNextAction extends BaseAction 
+{
 
+	/* (non-Javadoc)
+	 * @see xyz.wchy.action.base.BaseAction#actionPerformed(java.awt.event.ActionEvent)
+	 */
+	@Override
+	public void actionPerformed(ActionEvent e) 
+	{
+		super.actionPerformed(e);
+	}
+	
 }

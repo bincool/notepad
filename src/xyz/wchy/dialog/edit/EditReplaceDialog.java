@@ -64,19 +64,64 @@ public class EditReplaceDialog extends BaseDialog
 	 */
 	private static EditReplaceDialog instance = null;
 	
-	private static final JLabel searchContentLabel = new JLabel("查找内容(N) :");  
-	private static final JLabel replaceContentLabel = new JLabel("替换为(P)　 :");  
-	private static final JButton searchNext = new JButton("查找下一个(F)");  
-	private static final JButton replace = new JButton("替换(R)");  
+	/**
+	 * 
+	 */
+	private static final JLabel searchContentLabel = new JLabel("查找内容(N) :");
+	
+	/**
+	 * 
+	 */
+	private static final JLabel replaceContentLabel = new JLabel("替换为(P)　 :");
+	
+	/**
+	 * 
+	 */
+	private static final JButton searchNext = new JButton("查找下一个(F)");
+	
+	/**
+	 * 
+	 */
+	private static final JButton replace = new JButton("替换(R)");
+	
+	/**
+	 * 
+	 */
 	private static final JButton replaceAll = new JButton("全部替换(A)");
-	private static final JButton cancel = new JButton("取消"); 
-    // 创建"查找与替换"对话框的界面  
-	private static final JPanel bottomPanel = new JPanel();  
-	private static final JPanel centerPanel = new JPanel();  
+	
+	/**
+	 * 
+	 */
+	private static final JButton cancel = new JButton("取消");
+	
+	/**
+	 * 
+	 */
+	private static final JPanel bottomPanel = new JPanel();
+	
+	/**
+	 * 
+	 */
+	private static final JPanel centerPanel = new JPanel();
+	
+	/**
+	 * 
+	 */
 	private static final JPanel topPanel = new JPanel();  
 
-	private static final JPanel direction = new JPanel(); 
+	/**
+	 * 
+	 */
+	private static final JPanel direction = new JPanel();
+	
+	/**
+	 * 
+	 */
 	private static final JPanel replacePanel = new JPanel();
+	
+	/**
+	 * 
+	 */
 	private static final ButtonGroup bGroup = new ButtonGroup();
 	
 	/**
@@ -84,13 +129,39 @@ public class EditReplaceDialog extends BaseDialog
 	 */
 	private static final DomainHelper domain = DomainHelper.getInstance();
 	
+	/**
+	 * 
+	 */
 	private static final JDialog findDialog = new JDialog(domain.getFrame(), "查找与替换", true);
+	
+	/**
+	 * 
+	 */
 	private static final Container con = findDialog.getContentPane();
 	
+	/**
+	 * 
+	 */
 	private static final JTextField findText = domain.getFindText();
+	
+	/**
+	 * 
+	 */
 	private static final JTextField replaceText = domain.getReplaceText();
+	
+	/**
+	 * 
+	 */
 	private static final JCheckBox matchcase = domain.getMatchCase(); 
+	
+	/**
+	 * 
+	 */
 	private static final JRadioButton up = domain.getUp();
+	
+	/**
+	 * 
+	 */
 	private static final JRadioButton down = domain.getDown();
 	
 	/**
