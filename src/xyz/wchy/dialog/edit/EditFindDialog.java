@@ -68,69 +68,59 @@ public class EditFindDialog extends BaseDialog
 	private static EditFindDialog instance = null;
     
 	/**
-	 * 
+	 * 查找内容(N).
 	 */
 	private static final JLabel searchLabel = new JLabel("查找内容(N) :");
     
 	/**
-	 * 
+	 * 查找下一个(F)
 	 */
 	private static final JButton searchNext = new JButton("查找下一个(F)");
     
 	/**
-	 * 
+	 * 取消.
 	 */
 	private static final JButton cancel = new JButton("取消");
 	
 	/**
-	 * 
+	 * 单选按钮组.
 	 */
 	private static final ButtonGroup bGroup = new ButtonGroup();
 	
 	/**
-	 * 
+	 * 查找对话框.
 	 */
 	private static final JDialog findDialog = new JDialog(domain.getFrame(), "查找与替换", true);
 	
 	/**
-	 * 
+	 * 对话框容器.
 	 */
 	private static final Container container = findDialog.getContentPane();
 	
 	/**
-	 * 
+	 * 查找编辑框.
 	 */
 	private static final JTextField findText = domain.getFindText();
     
 	/**
-	 * 
+	 * 大小写选择框.
 	 */
 	private static final JCheckBox matchCase = domain.getMatchCase();
     
 	/**
-	 * 
+	 * 向上查找.
 	 */
 	private static final JRadioButton up = domain.getUp();
     
 	/**
-	 * 
+	 * 向下查找.
 	 */
 	private static final JRadioButton down = domain.getDown();
     
-	/**
-	 * 
-	 */ 
-	private static final JPanel bottomPanel = new JPanel();
-	
-	/**
-	 * 
-	 */
-	private static final JPanel topPanel = new JPanel();
-	
-	/**
-	 * 
-	 */
-	private static final JPanel direction = new JPanel();
+    // 创建"查找与替换"对话框的界面  
+    JPanel bottomPanel = new JPanel();
+    JPanel topPanel = new JPanel();
+    JPanel direction = new JPanel();
 	
 	/**
 	 * 有参构造函数.

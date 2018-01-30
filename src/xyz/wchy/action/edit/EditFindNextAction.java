@@ -44,5 +44,5 @@ public class EditFindNextAction extends BaseAction
 	{
 		super.actionPerformed(e);
 	}
-	
+
 }

@@ -36,8 +36,14 @@ import java.util.Date;
 public class DateUtils 
 {
 	
+	/**
+	 * yyyyMMdd格式.
+	 */
 	private final static DateFormat SDF_DAY_NUMBER = new SimpleDateFormat("yyyyMMdd");
 
+	/**
+	 * yyyy-MM-dd HH:mm:ss格式.
+	 */
 	private final static DateFormat SDF_TIME = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 	/**

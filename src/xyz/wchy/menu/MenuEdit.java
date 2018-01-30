@@ -17,12 +17,12 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.KeyStroke;
 
-import xyz.wchy.action.dialog.ReplaceAction;
 import xyz.wchy.action.edit.EditAllAction;
 import xyz.wchy.action.edit.EditCopyAction;
 import xyz.wchy.action.edit.EditDateAction;
 import xyz.wchy.action.edit.EditDeleteAction;
 import xyz.wchy.action.edit.EditFindAction;
+import xyz.wchy.action.edit.EditFindNextAction;
 import xyz.wchy.action.edit.EditGotoAction;
 import xyz.wchy.action.edit.EditPasteAction;
 import xyz.wchy.action.edit.EditReplaceAction;
@@ -204,7 +204,7 @@ public class MenuEdit extends MenuBase
 		menuEditPaste.addActionListener(new EditPasteAction());
 		menuEditDelete.addActionListener(new EditDeleteAction());
 		menuEditFind.addActionListener(new EditFindAction());
-		menuEditFindNext.addActionListener(new ReplaceAction());
+		menuEditFindNext.addActionListener(new EditFindNextAction());
 		menuEditReplace.addActionListener(new EditReplaceAction());
 		menuEditGoto.addActionListener(new EditGotoAction());
 		menuEditAll.addActionListener(new EditAllAction());

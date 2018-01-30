@@ -72,41 +72,6 @@ public class FileExitAction extends BaseAction
         	}
         }
         
-        
-//        if(Util.shell.fileDir != null || StringUtils.isNotEmpty(jTextArea.getText())) 
-//        {  //文件目录不为空，说明有打开着的文件，需要询问是否保存
-//            if(Util.shell.fileDir == null){
-//                tips = "文件  无标题   的文字已经改变。\n"+"想保存文件吗";
-//            }else{
-//                tips = "文件  " +Util.shell.fileDir + "  的文字已经改变。\n"+"想保存文件吗";
-//            }
-//            int n=JOptionPane.showConfirmDialog(null, tips,"记事本",JOptionPane.YES_NO_CANCEL_OPTION);
-//            if(n==0){  //是 返回0  否返回1 取消 返回2 
-//                SaveMethod savemethod = new SaveMethod();
-//                savemethod.Save(); //点是，则保存文件然后打开文件
-//            }else if(n==1){ //返回否
-//                System.exit(0);
-//            }else if(n==2){  //返回取消
-//                return ;
-//            }
-//            System.exit(0);
-//        }else{ 
-//            if(Util.shell.getText().getText() != ""){ //若目录为空，但是内容不为空，说明有内容但未保存，提示之
-//                tips = "文件  无标题   的文字已经改变。\n"+"想保存文件吗";
-//                int n=JOptionPane.showConfirmDialog(null, tips,"记事本",JOptionPane.YES_NO_CANCEL_OPTION);
-//                if(n==0){  //是 返回0  否返回1 取消 返回2 
-//                    SaveMethod savemethod = new SaveMethod();
-//                    savemethod.Save(); //点是，则保存文件然后打开文件
-//                }else if(n==1){ //返回否
-//                    System.exit(0);
-//                }else if(n==2){  //返回取消
-//                    return ;
-//                }
-//                System.exit(0);
-//            }else{
-//
-//            }
-//        }
 		System.exit(0);
 	}
 

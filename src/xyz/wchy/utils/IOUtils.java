@@ -68,6 +68,9 @@ public class IOUtils
      */
     public static final String LINE_SEPARATOR;
     
+    /**
+     * 
+     */
     static 
     {
         StringBuilderWriter buf = new StringBuilderWriter(4);
@@ -77,31 +80,54 @@ public class IOUtils
         out.close();
     }
     
+    /**
+     * 
+     */
     public IOUtils() 
     {
         super();
     }
     
+    /**
+     * 
+     * @param input
+     */
     public static void closeQuietly(Reader input) 
     {
         closeQuietly((Closeable)input);
     }
     
+    /**
+     * 
+     * @param output
+     */
     public static void closeQuietly(Writer output) 
     {
         closeQuietly((Closeable)output);
     }
 
+    /**
+     * 
+     * @param input
+     */
     public static void closeQuietly(InputStream input) 
     {
         closeQuietly((Closeable)input);
     }
     
+    /**
+     * 
+     * @param output
+     */
     public static void closeQuietly(OutputStream output) 
     {
         closeQuietly((Closeable)output);
     }
     
+    /**
+     * 
+     * @param closeable
+     */
     public static void closeQuietly(Closeable closeable) 
     {
         try 
@@ -116,6 +142,10 @@ public class IOUtils
         }
     }
     
+    /**
+     * 
+     * @param sock
+     */
     public static void closeQuietly(Socket sock) 
     {
         if (sock != null) 
@@ -130,6 +160,10 @@ public class IOUtils
         }
     }
     
+    /**
+     * 
+     * @param selector
+     */
     public static void closeQuietly(Selector selector) 
     {
         if (selector != null) 
@@ -145,6 +179,10 @@ public class IOUtils
         }
     }
     
+    /**
+     * 
+     * @param sock
+     */
     public static void closeQuietly(ServerSocket sock) 
     {
         if (sock != null) 

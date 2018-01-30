@@ -41,14 +41,29 @@ import xyz.wchy.action.base.BaseAction;
 public class FindAction extends BaseAction 
 {
 	
+	/**
+	 * 文本域.
+	 */
 	private static final JTextArea textArea = domain.getTextPane().getTextArea();
 	
+	/**
+	 * 查找编辑框.
+	 */
 	private static final JTextField findText = domain.getFindText();
     
+	/**
+	 * 大小写选择框.
+	 */
 	private static final JCheckBox matchCase = domain.getMatchCase();
     
+	/**
+	 * 向上查找.
+	 */
 	private static final JRadioButton up = domain.getUp();
     
+	/**
+	 * 向下查找.
+	 */
 	private static final JRadioButton down = domain.getDown();
 
 	/* (non-Javadoc)

@@ -65,62 +65,62 @@ public class EditReplaceDialog extends BaseDialog
 	private static EditReplaceDialog instance = null;
 	
 	/**
-	 * 
+	 * 查找内容(N).
 	 */
-	private static final JLabel searchContentLabel = new JLabel("查找内容(N) :");
+	private static final JLabel searchContentLabel = new JLabel("查找内容(N) :");  
 	
 	/**
-	 * 
+	 * 替换为(P).
 	 */
-	private static final JLabel replaceContentLabel = new JLabel("替换为(P)　 :");
+	private static final JLabel replaceContentLabel = new JLabel("替换为(P)　 :");  
 	
 	/**
-	 * 
+	 * 查找下一个(F).
 	 */
-	private static final JButton searchNext = new JButton("查找下一个(F)");
+	private static final JButton searchNext = new JButton("查找下一个(F)");  
 	
 	/**
-	 * 
+	 * 替换(R).
 	 */
-	private static final JButton replace = new JButton("替换(R)");
+	private static final JButton replace = new JButton("替换(R)");  
 	
 	/**
-	 * 
+	 * 全部替换(A).
 	 */
 	private static final JButton replaceAll = new JButton("全部替换(A)");
 	
 	/**
-	 * 
+	 * 取消.
 	 */
-	private static final JButton cancel = new JButton("取消");
+	private static final JButton cancel = new JButton("取消"); 
+    
+	/**
+	 * 底部panel.
+	 */ 
+	private static final JPanel bottomPanel = new JPanel();  
 	
 	/**
-	 * 
+	 * 中部panel.
 	 */
-	private static final JPanel bottomPanel = new JPanel();
+	private static final JPanel centerPanel = new JPanel();  
 	
 	/**
-	 * 
-	 */
-	private static final JPanel centerPanel = new JPanel();
-	
-	/**
-	 * 
+	 * 顶部panel.
 	 */
 	private static final JPanel topPanel = new JPanel();  
 
 	/**
-	 * 
+	 * 单选选择组.
 	 */
-	private static final JPanel direction = new JPanel();
+	private static final JPanel direction = new JPanel(); 
 	
 	/**
-	 * 
+	 * 替换panel.
 	 */
 	private static final JPanel replacePanel = new JPanel();
 	
 	/**
-	 * 
+	 * 单选按钮组.
 	 */
 	private static final ButtonGroup bGroup = new ButtonGroup();
 	
@@ -130,37 +130,37 @@ public class EditReplaceDialog extends BaseDialog
 	private static final DomainHelper domain = DomainHelper.getInstance();
 	
 	/**
-	 * 
+	 * 查找对话框.
 	 */
 	private static final JDialog findDialog = new JDialog(domain.getFrame(), "查找与替换", true);
 	
 	/**
-	 * 
+	 * 对话框容器.
 	 */
-	private static final Container con = findDialog.getContentPane();
+	private static final Container container = findDialog.getContentPane();
 	
 	/**
-	 * 
+	 * 查找编辑框.
 	 */
 	private static final JTextField findText = domain.getFindText();
 	
 	/**
-	 * 
+	 * 替换编辑框.
 	 */
 	private static final JTextField replaceText = domain.getReplaceText();
 	
 	/**
-	 * 
+	 * 大小写选择框.
 	 */
-	private static final JCheckBox matchcase = domain.getMatchCase(); 
+	private static final JCheckBox matchCase = domain.getMatchCase(); 
 	
 	/**
-	 * 
+	 * 向上查找.
 	 */
 	private static final JRadioButton up = domain.getUp();
 	
 	/**
-	 * 
+	 * 向下查找.
 	 */
 	private static final JRadioButton down = domain.getDown();
 	
@@ -196,7 +196,7 @@ public class EditReplaceDialog extends BaseDialog
 	public void initDialog() 
 	{  
         
-        con.setLayout(new FlowLayout(FlowLayout.LEFT));  
+		container.setLayout(new FlowLayout(FlowLayout.LEFT));  
          
         down.setSelected(true);  
         bGroup.add(up);  
@@ -234,13 +234,13 @@ public class EditReplaceDialog extends BaseDialog
         centerPanel.add(replaceContentLabel);  
         centerPanel.add(replaceText);  
         centerPanel.add(replacePanel);  
-        bottomPanel.add(matchcase);  
+        bottomPanel.add(matchCase);  
         bottomPanel.add(direction);  
         bottomPanel.add(cancel);  
   
-        con.add(topPanel);  
-        con.add(centerPanel);  
-        con.add(bottomPanel);  
+        container.add(topPanel);  
+        container.add(centerPanel);  
+        container.add(bottomPanel);  
   
         // 设置"查找与替换"对话框的大小、可更改大小(否)、位置和可见性  
         findDialog.setSize(410, 210);  

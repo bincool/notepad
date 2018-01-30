@@ -10,6 +10,9 @@
 */
 package xyz.wchy.action.file;
 
+import java.awt.Graphics;
+import java.awt.PrintJob;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 
 import xyz.wchy.action.base.BaseAction;
@@ -42,7 +45,10 @@ public class FilePagePrintAction extends BaseAction
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		super.actionPerformed(e);
+		PrintJob printJob = Toolkit.getDefaultToolkit().getPrintJob(domain.getFrame(), "¥Ú”°", null);
+		Graphics graphics = printJob.getGraphics(); 
+        domain.getTextPane().getTextArea().printAll(graphics);  
+        printJob.end();
 	}
 
 }

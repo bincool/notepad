@@ -55,20 +55,44 @@ public class HelpDialog extends BaseDialog
 	 */
 	private static HelpDialog instance = null;
 	
+	/**
+	 * 容器panel.
+	 */
 	private static final JPanel panel = new JPanel();
 	
+	/**
+	 * 关于文本内容.
+	 */
 	private static final String about = "<html><body>NotePad<br>Version：1.0<br>QQ：891946049<br><body></html>";
 	
+	/**
+	 * 关于label.
+	 */
 	private static final JLabel label = new JLabel(about, JLabel.CENTER);
 	
+	/**
+	 * 字体.
+	 */
 	private static final Font font = new Font(Font.DIALOG, Font.PLAIN, 16);
 	
+	/**
+	 * 确定按钮.
+	 */
 	private static final JButton button = new JButton("确定");
 	
+	/**
+	 * 屏幕大小.
+	 */
 	private static final Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
 	
+	/**
+	 * 对话框宽.
+	 */
 	private static final int width = (int) dimension.getWidth();
 	
+	/**
+	 * 对话框高.
+	 */
 	private static final int hight = (int) dimension.getHeight();
 	
 	/**

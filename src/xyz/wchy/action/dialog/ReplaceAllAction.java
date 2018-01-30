@@ -42,20 +42,36 @@ import xyz.wchy.action.base.BaseAction;
 public class ReplaceAllAction extends BaseAction 
 {
 	
+	/**
+	 * 文本域.
+	 */
 	private static final JTextArea textArea = domain.getTextPane().getTextArea();
 	
+	/**
+	 * 查找编辑框.
+	 */
 	private static final JTextField findText = domain.getFindText();
 	
+	/**
+	 * 替换编辑框.
+	 */
 	private static final JTextField replaceText = domain.getReplaceText();
     
+	/**
+	 * 大小写选择框.
+	 */
 	private static final JCheckBox matchCase = domain.getMatchCase();
     
+	/**
+	 * 向上查找.
+	 */
 	private static final JRadioButton up = domain.getUp();
     
+	/**
+	 * 向下查找.
+	 */
 	private static final JRadioButton down = domain.getDown();
 	
-	//private static final JTextArea textArea = domain.getTextPane().getTextArea();
-
 	/* (non-Javadoc)
 	 * @see xyz.wchy.action.base.BaseAction#actionPerformed(java.awt.event.ActionEvent)
 	 */

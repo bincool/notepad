@@ -39,8 +39,14 @@ import xyz.wchy.utils.StringUtils;
 public class ReplaceAction extends BaseAction 
 {
 	
+	/**
+	 * ÎÄ±¾Óò.
+	 */
 	private static final JTextArea textArea = domain.getTextPane().getTextArea();
 	
+	/**
+	 * Ìæ»»±à¼­¿ò.
+	 */
 	private static final JTextField replaceText = domain.getReplaceText();
 
 	/* (non-Javadoc)

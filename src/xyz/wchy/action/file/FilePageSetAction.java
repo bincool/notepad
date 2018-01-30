@@ -11,6 +11,8 @@
 package xyz.wchy.action.file;
 
 import java.awt.event.ActionEvent;
+import java.awt.print.PageFormat;
+import java.awt.print.PrinterJob;
 
 import xyz.wchy.action.base.BaseAction;
 
@@ -19,13 +21,13 @@ import xyz.wchy.action.base.BaseAction;
 * 
 * @Description: 
 * <p>
-* TODO 一句话对这个类进行描述.
+* 文件操作菜单-页面设置事件.
 * </p>
 * <p>
-* TODO 详细描述.
+* 详细描述.
 * </p>
 * <p>
-* TODO 示例代码.
+* 示例代码.
 * </p>
 *
 * @Author: wchy，技术交流(891946049).
@@ -42,7 +44,7 @@ public class FilePageSetAction extends BaseAction
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		super.actionPerformed(e);
+		PrinterJob.getPrinterJob().pageDialog(new PageFormat());
 	}
 
 }

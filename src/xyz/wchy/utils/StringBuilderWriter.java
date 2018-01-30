@@ -35,26 +35,45 @@ import java.io.Writer;
 public class StringBuilderWriter extends Writer implements Serializable 
 {
 	
+	/**
+	 * 序列版本号.
+	 */
 	private static final long serialVersionUID = 1L;
 	
+	/**
+	 * 内存地址块.
+	 */
 	private final StringBuilder builder;
 	
+	/**
+	 * 
+	 */
     public StringBuilderWriter() 
     {
         this.builder = new StringBuilder();
     }
     
+    /**
+     * 
+     * @param capacity
+     */
     public StringBuilderWriter(int capacity) 
     {
         this.builder = new StringBuilder(capacity);
     }
     
+    /**
+     * 
+     * @param builder
+     */
     public StringBuilderWriter(StringBuilder builder) 
     {
         this.builder = builder != null ? builder : new StringBuilder();
     }
 
-    
+    /**
+     * 
+     */
     @Override
     public Writer append(char value) 
     {
@@ -62,6 +81,9 @@ public class StringBuilderWriter extends Writer implements Serializable
         return this;
     }
     
+    /**
+     * 
+     */
     @Override
     public Writer append(CharSequence value) 
     {
@@ -69,6 +91,9 @@ public class StringBuilderWriter extends Writer implements Serializable
         return this;
     }
     
+    /**
+     * 
+     */
     @Override
     public Writer append(CharSequence value, int start, int end) 
     {
@@ -76,16 +101,25 @@ public class StringBuilderWriter extends Writer implements Serializable
         return this;
     }
     
+    /**
+     * 
+     */
     @Override
     public void close() 
     {
     }
     
+    /**
+     * 
+     */
     @Override
     public void flush() 
     {
     }
     
+    /**
+     * 
+     */
     @Override
     public void write(String value) 
     {
@@ -95,6 +129,9 @@ public class StringBuilderWriter extends Writer implements Serializable
         }
     }
     
+    /**
+     * 
+     */
     @Override
     public void write(char[] value, int offset, int length) 
     {
@@ -104,11 +141,18 @@ public class StringBuilderWriter extends Writer implements Serializable
         }
     }
     
+    /**
+     * 
+     * @return
+     */
     public StringBuilder getBuilder() 
     {
         return builder;
     }
     
+    /**
+     * 
+     */
     @Override
     public String toString() 
     {
