@@ -46,9 +46,9 @@ public class FilePagePrintAction extends BaseAction
 	public void actionPerformed(ActionEvent e) 
 	{
 		PrintJob printJob = Toolkit.getDefaultToolkit().getPrintJob(domain.getFrame(), "¥Ú”°", null);
-		Graphics graphics = printJob.getGraphics(); 
-        domain.getTextPane().getTextArea().printAll(graphics);  
-        printJob.end();
+		Graphics graphics = printJob.getGraphics();
+		domain.getTextPane().getTextArea().printAll(graphics);
+		printJob.end();
 	}
 
 }

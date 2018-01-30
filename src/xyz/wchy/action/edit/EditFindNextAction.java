@@ -12,7 +12,12 @@ package xyz.wchy.action.edit;
 
 import java.awt.event.ActionEvent;
 
+import javax.swing.JTextField;
+
 import xyz.wchy.action.base.BaseAction;
+import xyz.wchy.action.dialog.FindAction;
+import xyz.wchy.dialog.edit.EditFindDialog;
+import xyz.wchy.utils.StringUtils;
 
 /**
 * @ClassName: EditFindNextAction.java
@@ -35,6 +40,11 @@ import xyz.wchy.action.base.BaseAction;
 */
 public class EditFindNextAction extends BaseAction 
 {
+	
+	/**
+	 * ≤È’“±‡º≠øÚ.
+	 */
+	private static final JTextField findText = domain.getFindText();
 
 	/* (non-Javadoc)
 	 * @see xyz.wchy.action.base.BaseAction#actionPerformed(java.awt.event.ActionEvent)
@@ -42,7 +52,14 @@ public class EditFindNextAction extends BaseAction
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		super.actionPerformed(e);
+		if (StringUtils.isEmpty(findText.getText())) 
+		{
+			EditFindDialog.getInstance(domain.getFrame()).initDialog();
+		} 
+		else 
+		{
+			new FindAction().actionPerformed(e);
+		}
 	}
 
 }
