@@ -42,97 +42,89 @@ public class FindAction extends BaseAction
 {
 	
 	/**
+	 * 查找action单例类.
+	 */
+	private static FindAction instance = null;
+	
+	/**
 	 * 文本域.
 	 */
 	private static final JTextArea textArea = domain.getTextPane().getTextArea();
-	
+
 	/**
 	 * 查找编辑框.
 	 */
 	private static final JTextField findText = domain.getFindText();
-    
+
 	/**
 	 * 大小写选择框.
 	 */
 	private static final JCheckBox matchCase = domain.getMatchCase();
-    
+
 	/**
 	 * 向上查找.
 	 */
 	private static final JRadioButton up = domain.getUp();
-    
+	
+	private FindAction() 
+	{
+	}
+	
 	/**
-	 * 向下查找.
+	 * 获取关于记事本对话框单例对象.
+	 * @param owner
+	 * @return
 	 */
-	private static final JRadioButton down = domain.getDown();
+	public static FindAction getInstance() 
+	{
+		if (null == instance) 
+		{
+			instance = new FindAction();
+		}
+		return instance;
+	}
 
-	/* (non-Javadoc)
-	 * @see xyz.wchy.action.base.BaseAction#actionPerformed(java.awt.event.ActionEvent)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * xyz.wchy.action.base.BaseAction#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		int a = 0, b = 0;  
-        int FindStartPos = textArea.getCaretPosition();  
-        String str1, str2, str3, str4, strA, strB;  
-        str1 = textArea.getText();  
-        str2 = str1.toLowerCase();  
-        str3 = findText.getText();  
-        str4 = str3.toLowerCase();  
-        // "区分大小写"的CheckBox被选中  
-        if (matchCase.isSelected()) 
-        {
-            strA = str1;
-            strB = str3;
-        }
-        else
-        {
-            strA = str2;
-            strB = str4;
-        }
-        
-        if (up.isSelected()) 
-        {  
-            if (textArea.getSelectedText() == null) 
-            {  
-                a = strA.lastIndexOf(strB, FindStartPos - 1);  
-            } 
-            else 
-            {  
-                a = strA.lastIndexOf(strB, FindStartPos - findText.getText().length() - 1);  
-            }  
-        } 
-        else if (down.isSelected()) 
-        {  
-            if (textArea.getSelectedText() == null) 
-            {  
-                a = strA.indexOf(strB, FindStartPos);  
-            } 
-            else 
-            {  
-                a = strA.indexOf(strB, FindStartPos - findText.getText().length() + 1);  
-            }  
+		int index = -1;
 
-        }  
-        if (a > -1) 
-        {
-            if (up.isSelected()) 
-            {
-                textArea.setCaretPosition(a);
-                b = findText.getText().length();
-                textArea.select(a, a + b);
-            }
-            else if (down.isSelected())
-            {
-                textArea.setCaretPosition(a);
-                b = findText.getText().length();
-                textArea.select(a, a + b);
-            }
-        }
-        else
-        {
-            JOptionPane.showMessageDialog(null, "找不到您查找的内容!", "记事本", JOptionPane.INFORMATION_MESSAGE);  
-        }
+		String textStr = textArea.getText().toLowerCase();
+		String findStr = findText.getText().toLowerCase();
+
+		// "区分大小写"的CheckBox被选中.
+		if (matchCase.isSelected()) 
+		{
+			textStr = textArea.getText();
+			findStr = findText.getText();
+		}
+		
+		if (up.isSelected()) 
+		{
+			textStr = textStr.substring(0, textArea.getSelectionStart());
+			index = textStr.lastIndexOf(findStr, textArea.getSelectionStart());
+		} 
+		else 
+		{
+			index = textStr.indexOf(findStr, textArea.getSelectionEnd());
+		}
+		
+		if (index > -1) 
+		{
+			textArea.select(index, index + findStr.length());
+			return;
+		} 
+		else 
+		{
+			JOptionPane.showMessageDialog(domain.getFrame(), "找不到\"" + findStr + "\"", "记事本", JOptionPane.INFORMATION_MESSAGE);
+		}
+		
 	}
 
 }

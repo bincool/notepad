@@ -58,7 +58,7 @@ public class EditFindNextAction extends BaseAction
 		} 
 		else 
 		{
-			new FindAction().actionPerformed(e);
+			FindAction.getInstance().actionPerformed(e);
 		}
 	}
 

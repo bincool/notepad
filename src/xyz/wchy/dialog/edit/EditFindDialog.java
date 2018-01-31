@@ -178,7 +178,7 @@ public class EditFindDialog extends BaseDialog
         container.add(bottomPanel);
         
         // "查找下一个"按钮事件处理.
-        searchNext.addActionListener(new FindAction());
+        searchNext.addActionListener(FindAction.getInstance());
         
         cancel.addActionListener(new CancelAction(findDialog));
         

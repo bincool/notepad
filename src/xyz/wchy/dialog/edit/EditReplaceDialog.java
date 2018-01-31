@@ -212,7 +212,7 @@ public class EditReplaceDialog extends BaseDialog
         replaceAll.addActionListener(new ReplaceAllAction());
   
         // "查找下一个"按钮事件处理  
-        searchNext.addActionListener(new FindAction());
+        searchNext.addActionListener(FindAction.getInstance());
         // "取消"按钮及事件处理  
          
         cancel.setPreferredSize(new Dimension(110, 22));  
