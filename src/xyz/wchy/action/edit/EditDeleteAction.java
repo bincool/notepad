@@ -12,7 +12,10 @@ package xyz.wchy.action.edit;
 
 import java.awt.event.ActionEvent;
 
+import javax.swing.JTextArea;
+
 import xyz.wchy.action.base.BaseAction;
+import xyz.wchy.utils.StringUtils;
 
 /**
 * @ClassName: EditDeleteAction.java
@@ -35,6 +38,8 @@ import xyz.wchy.action.base.BaseAction;
 */
 public class EditDeleteAction extends BaseAction 
 {
+	
+	private static final JTextArea textArea = domain.getTextPane().getTextArea();
 
 	/* (non-Javadoc)
 	 * @see xyz.wchy.action.base.BaseAction#actionPerformed(java.awt.event.ActionEvent)
@@ -42,7 +47,10 @@ public class EditDeleteAction extends BaseAction
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		super.actionPerformed(e);
+		if (StringUtils.isNotEmpty(textArea.getSelectedText())) 
+		{
+			textArea.replaceRange("", textArea.getSelectionStart(), textArea.getSelectionEnd());
+		}
 	}
 
 }
