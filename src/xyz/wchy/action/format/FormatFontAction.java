@@ -13,6 +13,7 @@ package xyz.wchy.action.format;
 import java.awt.event.ActionEvent;
 
 import xyz.wchy.action.base.BaseAction;
+import xyz.wchy.dialog.format.FontDialog;
 
 /**
 * @ClassName: FormatFontAction.java
@@ -42,7 +43,7 @@ public class FormatFontAction extends BaseAction
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		super.actionPerformed(e);
+		FontDialog.getInstance(domain.getFrame());
 	}
 
 }
