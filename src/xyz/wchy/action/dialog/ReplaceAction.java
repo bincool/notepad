@@ -64,6 +64,8 @@ public class ReplaceAction extends BaseAction
 		{
 			textArea.replaceSelection(replaceText.getText());
 		} 
+		
+		FindAction.getInstance().actionPerformed(e);
 	}
 
 }
