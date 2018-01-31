@@ -12,8 +12,6 @@ package xyz.wchy.action.file;
 
 import java.awt.event.ActionEvent;
 
-import javax.swing.JFileChooser;
-
 import xyz.wchy.action.base.BaseAction;
 import xyz.wchy.utils.DomainHelper;
 import xyz.wchy.utils.FileHelper;
@@ -57,17 +55,7 @@ public class FileSaveAction extends BaseAction
 		} 
 		else 
 		{
-			// 打开保存框.
-	        JFileChooser jFileChooser = new JFileChooser();
-	        
-	        // 选择文件.
-	        int value = jFileChooser.showSaveDialog(null);  
-	        if (value == JFileChooser.APPROVE_OPTION) 
-	        {
-	            fileName = jFileChooser.getSelectedFile().getAbsolutePath();
-	            FileHelper.writeFile(fileName, content);
-	            DomainHelper.getInstance().setFileName(fileName);
-	        } 
+			new FileSaveAsAction().actionPerformed(event);
 		}
 		
 		LOGGER.info(FileSaveAction.class, "End to save.");

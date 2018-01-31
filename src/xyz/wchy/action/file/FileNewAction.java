@@ -17,6 +17,7 @@ import javax.swing.JTextArea;
 
 import xyz.wchy.action.base.BaseAction;
 import xyz.wchy.utils.DomainHelper;
+import xyz.wchy.utils.FileHelper;
 import xyz.wchy.utils.StringUtils;
 
 /**
@@ -52,7 +53,7 @@ public class FileNewAction extends BaseAction
 		String fileName = DomainHelper.getInstance().getFileName();
 		String content = jTextArea.getText();
 		
-		if(StringUtils.isNotEmpty(fileName) || StringUtils.isNotEmpty(content)) 
+		if(StringUtils.isNotEmpty(fileName) && StringUtils.isNotEmpty(content)) 
 		{
 			String tips = "是否将更改保存到\n" + fileName;
             int value = JOptionPane.showConfirmDialog(domain.getFrame(), tips, "记事本", JOptionPane.YES_NO_CANCEL_OPTION);
@@ -68,8 +69,28 @@ public class FileNewAction extends BaseAction
             else if(0 == value) 
             {
             	// 返回是，执行保存操作然后初始化.
+            	FileHelper.writeFile(fileName, content);
             }
-        }
+        } 
+		else 
+		{
+			String tips = "是否将更改保存到\n无标题";
+            int value = JOptionPane.showConfirmDialog(domain.getFrame(), tips, "记事本", JOptionPane.YES_NO_CANCEL_OPTION);
+            if(2 == value) 
+            {
+            	// 取消，.
+            	return ;
+            } 
+            else if(1 == value) 
+            {
+            	// 返回否，.
+            } 
+            else if(0 == value) 
+            {
+            	// 返回是，执行保存操作然后初始化.
+            	new FileSaveAsAction().actionPerformed(e);
+            }
+		}
         jTextArea.setText("");
         DomainHelper.getInstance().setFileName(null);
 	}

@@ -12,11 +12,7 @@ package xyz.wchy.action.file;
 
 import java.awt.event.ActionEvent;
 
-import javax.swing.JTextArea;
-
 import xyz.wchy.action.base.BaseAction;
-import xyz.wchy.utils.DomainHelper;
-import xyz.wchy.utils.StringUtils;
 
 
 /**
@@ -48,29 +44,7 @@ public class FileExitAction extends BaseAction
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		/**
-         * 退出函数退出时进行判断是否需要保存
-         */
-        JTextArea jTextArea = DomainHelper.getInstance().getTextPane().getTextArea();
-        String fileName = DomainHelper.getInstance().getFileName();
-        
-        // 1 判断是否有文件路径.
-        if (StringUtils.isNotEmpty(fileName)) 
-        {
-        	
-        } 
-        else 
-        {
-        	// 判断文本内容是否为空.
-        	if (StringUtils.isEmpty(jTextArea.getText())) 
-        	{
-        		
-        	} 
-        	else 
-        	{
-        		
-        	}
-        }
+		new FileNewAction().actionPerformed(e);
         
 		System.exit(0);
 	}
