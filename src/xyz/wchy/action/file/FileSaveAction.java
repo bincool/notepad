@@ -1,7 +1,7 @@
 /**
 * @FileName: FileSaveAction.java
 * @Package: xyz.wchy.action.file
-* @Copyright: 2018 www.lfclass.com Inc. All Rights Reserved.
+* @Copyright: 2018 io.github.bincool Inc. All Rights Reserved.
 * @Description: FileSaveAction.java: 文件操作菜单-保存事件.
 * @Author wchy，技术交流(891946049).
 * @Date 2018年1月29日 上午10:13:40.

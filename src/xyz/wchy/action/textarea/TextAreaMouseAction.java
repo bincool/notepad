@@ -1,7 +1,7 @@
 /**
 * @FileName: TextAreaMouseAction.java
 * @Package: xyz.wchy.action.textarea
-* @Copyright: 2018 www.lfclass.com Inc. All Rights Reserved.
+* @Copyright: 2018 io.github.bincool Inc. All Rights Reserved.
 * @Description: TextAreaMouseAction.java: 文本内容鼠标监听事件.
 * @Author wchy，技术交流(891946049).
 * @Date 2018年1月29日 上午10:13:40.

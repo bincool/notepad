@@ -1,7 +1,7 @@
 /**
 * @FileName: FontDialog.java
 * @Package: xyz.wchy.dialog.format
-* @Copyright: 2018 www.wchy.xyz Inc. All Rights Reserved.
+* @Copyright: 2018 io.github.bincool Inc. All Rights Reserved.
 * @Description: FontDialog.java: 字体选择对话框.
 * @Author wchy，技术交流(891946049).
 * @Date 2018年1月31日 下午1:07:03.

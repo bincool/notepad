@@ -1,7 +1,7 @@
 /**
 * @FileName: EditReplaceAction.java
 * @Package: xyz.wchy.action.edit
-* @Copyright: 2018 www.lfclass.com Inc. All Rights Reserved.
+* @Copyright: 2018 io.github.bincool Inc. All Rights Reserved.
 * @Description: EditReplaceAction.java: 编辑操作菜单-替换事件.
 * @Author wchy，技术交流(891946049).
 * @Date 2018年1月29日 上午10:13:40.

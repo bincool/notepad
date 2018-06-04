@@ -1,7 +1,7 @@
 /**
 * @FileName: SystemConfigHelper.java
 * @Package: xyz.wchy.utils
-* @Copyright: 2018 www.lfclass.com Inc. All Rights Reserved.
+* @Copyright: 2018 io.github.bincool Inc. All Rights Reserved.
 * @Description: SystemConfigHelper.java: TODO 一句话描述文件的作用.
 * @Author wchy，技术交流(891946049).
 * @Date 2018年1月29日 上午10:13:40.
