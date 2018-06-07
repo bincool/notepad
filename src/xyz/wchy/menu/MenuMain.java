@@ -1,7 +1,7 @@
 /**
 * @FileName: MenuMain.java
 * @Package: xyz.wchy.menu
-* @Copyright: 2018 io.github.bincool Inc. All Rights Reserved.
+* @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
 * @Description: MenuMain.java: 记事本菜单.
 * @Author wchy，技术交流(891946049).
 * @Date 2018年1月29日 上午10:13:40.

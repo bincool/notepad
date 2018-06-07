@@ -1,7 +1,7 @@
 /**
 * @FileName: ReplaceAction.java
 * @Package: xyz.wchy.action.dialog
-* @Copyright: 2018 io.github.bincool Inc. All Rights Reserved.
+* @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
 * @Description: ReplaceAction.java: 替换功能.
 * @Author wchy，技术交流(891946049).
 * @Date 2018年1月29日 下午1:43:20.
