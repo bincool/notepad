@@ -52,7 +52,7 @@ public class Logger
 		try 
 		{
 			FileHelper.createFilePath("logs");
-			String pathName = "logs" + SystemConstant.DIR_SEPARATOR + "lfclass_" + DateUtils.getDays() + ".log";
+			String pathName = "logs" + SystemConstant.DIR_SEPARATOR + "bincool_" + DateUtils.getDays() + ".log";
 			FileHelper.createFile(pathName);
 			String fileContent = FileHelper.readToString(pathName);
 			file = new File(pathName);
