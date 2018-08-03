@@ -2,10 +2,10 @@
 * @FileName: IOUtils.java
 * @Package: xyz.wchy.utils
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: IOUtils.java: IO¹¤¾ßÀà.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: IOUtils.java: IOå·¥å…·ç±».
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.utils;
@@ -27,18 +27,18 @@ import java.nio.channels.Selector;
 * 
 * @Description: 
 * <p>
-* IO¹¤¾ßÀà.
+* IOå·¥å…·ç±».
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ21ÈÕ ÉÏÎç4:38:22.
+* @Date: 2018å¹´1æœˆ21æ—¥ ä¸Šåˆ4:38:22.
 * 
 */
 public class IOUtils 

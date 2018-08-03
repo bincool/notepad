@@ -2,10 +2,10 @@
 * @FileName: HelpViewAction.java
 * @Package: xyz.wchy.action.help
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: HelpViewAction.java: °ïÖú²Ù×÷²Ëµ¥-²é¿´°ï×éÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: HelpViewAction.java: å¸®åŠ©æ“ä½œèœå•-æŸ¥çœ‹å¸®ç»„äº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.help;
@@ -20,18 +20,18 @@ import xyz.wchy.dialog.help.HelpAboutDialog;
 * 
 * @Description: 
 * <p>
-* °ïÖú²Ù×÷²Ëµ¥-²é¿´°ï×éÊÂ¼ş.
+* å¸®åŠ©æ“ä½œèœå•-æŸ¥çœ‹å¸®ç»„äº‹ä»¶.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ21ÈÕ ÉÏÎç12:54:13.
+* @Date: 2018å¹´1æœˆ21æ—¥ ä¸Šåˆ12:54:13.
 * 
 */
 public class HelpViewAction extends BaseAction 

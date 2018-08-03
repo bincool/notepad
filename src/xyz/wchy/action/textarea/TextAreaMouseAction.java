@@ -2,10 +2,10 @@
 * @FileName: TextAreaMouseAction.java
 * @Package: xyz.wchy.action.textarea
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: TextAreaMouseAction.java: ÎÄ±¾ÄÚÈİÊó±ê¼àÌıÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: TextAreaMouseAction.java: æ–‡æœ¬å†…å®¹é¼ æ ‡ç›‘å¬äº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.textarea;
@@ -21,18 +21,18 @@ import xyz.wchy.utils.StringUtils;
 * 
 * @Description: 
 * <p>
-* ÎÄ±¾ÄÚÈİÊó±ê¼àÌıÊÂ¼ş.
+* æ–‡æœ¬å†…å®¹é¼ æ ‡ç›‘å¬äº‹ä»¶.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ25ÈÕ ÏÂÎç3:59:55.
+* @Date: 2018å¹´1æœˆ25æ—¥ ä¸‹åˆ3:59:55.
 * 
 */
 public class TextAreaMouseAction extends BaseData implements MouseListener 
@@ -60,7 +60,7 @@ public class TextAreaMouseAction extends BaseData implements MouseListener
 	@Override
 	public void mouseReleased(MouseEvent e) 
 	{
-		// ÓĞÑ¡ÖĞÎÄ±¾.
+		// æœ‰é€‰ä¸­æ–‡æœ¬.
 		if (StringUtils.isNotEmpty(domain.getTextPane().getTextArea().getSelectedText())) 
 		{
 			domain.getMenuEditTrim().setEnabled(true);

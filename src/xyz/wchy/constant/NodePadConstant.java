@@ -2,10 +2,10 @@
 * @FileName: NodePadConstant.java
 * @Package: xyz.wchy.constant
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: NodePadConstant.java: ¼ÇÊÂ±¾³£Á¿-¿ÉÅäÖÃ.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: NodePadConstant.java: è®°äº‹æœ¬å¸¸é‡-å¯é…ç½®.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.constant;
@@ -17,160 +17,160 @@ import xyz.wchy.utils.SystemConfigHelper;
 * 
 * @Description: 
 * <p>
-* ¼ÇÊÂ±¾³£Á¿-¿ÉÔÚapplication.propertiesÖĞÅäÖÃÆä³£Á¿¾ßÌåÖµ.
+* è®°äº‹æœ¬å¸¸é‡-å¯åœ¨application.propertiesä¸­é…ç½®å…¶å¸¸é‡å…·ä½“å€¼.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ15ÈÕ ÏÂÎç10:44:34.
+* @Date: 2018å¹´1æœˆ15æ—¥ ä¸‹åˆ10:44:34.
 * 
 */
 public interface NodePadConstant 
 {
 	
 	/**
-	 * Ò»¼¶²Ëµ¥-ÎÄ¼ş(F).
+	 * ä¸€çº§èœå•-æ–‡ä»¶(F).
 	 */
 	String MENU_TITLE_FILE = SystemConfigHelper.getInstance().getProMap().get("menu.title.file");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(F)-ĞÂ½¨(N).
+	 * äºŒçº§èœå•(F)-æ–°å»º(N).
 	 */
 	String MENU_TITLE_FILE_NEW = SystemConfigHelper.getInstance().getProMap().get("menu.title.file.new");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(F)-´ò¿ª(O).
+	 * äºŒçº§èœå•(F)-æ‰“å¼€(O).
 	 */
 	String MENU_TITLE_FILE_OPEN = SystemConfigHelper.getInstance().getProMap().get("menu.title.file.open");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(F)-±£´æ(S).
+	 * äºŒçº§èœå•(F)-ä¿å­˜(S).
 	 */
 	String MENU_TITLE_FILE_SAVE = SystemConfigHelper.getInstance().getProMap().get("menu.title.file.save");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(F)-Áí´æÎª(A).
+	 * äºŒçº§èœå•(F)-å¦å­˜ä¸º(A).
 	 */
 	String MENU_TITLE_FILE_SAVE_AS = SystemConfigHelper.getInstance().getProMap().get("menu.title.file.save.as");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(F)-Ò³ÃæÉèÖÃ(U).
+	 * äºŒçº§èœå•(F)-é¡µé¢è®¾ç½®(U).
 	 */
 	String MENU_TITLE_FILE_PAGE_SET = SystemConfigHelper.getInstance().getProMap().get("menu.title.file.page.set");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(F)-´òÓ¡(P).
+	 * äºŒçº§èœå•(F)-æ‰“å°(P).
 	 */
 	String MENU_TITLE_FILE_PAGE_PRINT = SystemConfigHelper.getInstance().getProMap().get("menu.title.file.page.print");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(F)-ÍË³ö(X).
+	 * äºŒçº§èœå•(F)-é€€å‡º(X).
 	 */
 	String MENU_TITLE_FILE_EXIT = SystemConfigHelper.getInstance().getProMap().get("menu.title.file.exit");
 	
 	/**
-	 * Ò»¼¶²Ëµ¥-±à¼­(E).
+	 * ä¸€çº§èœå•-ç¼–è¾‘(E).
 	 */
 	String MENU_TITLE_EDIT = SystemConfigHelper.getInstance().getProMap().get("menu.title.edit");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)-³·Ïú(U).
+	 * äºŒçº§èœå•(E)-æ’¤é”€(U).
 	 */
 	String MENU_TITLE_EDIT_UNDO = SystemConfigHelper.getInstance().getProMap().get("menu.title.edit.undo");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)-¼ôÇĞ(T).
+	 * äºŒçº§èœå•(E)-å‰ªåˆ‡(T).
 	 */
 	String MENU_TITLE_EDIT_TRIM = SystemConfigHelper.getInstance().getProMap().get("menu.title.edit.trim");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)-¸´ÖÆ(C).
+	 * äºŒçº§èœå•(E)-å¤åˆ¶(C).
 	 */
 	String MENU_TITLE_EDIT_COPY = SystemConfigHelper.getInstance().getProMap().get("menu.title.edit.copy");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)-Õ³Ìù(P).
+	 * äºŒçº§èœå•(E)-ç²˜è´´(P).
 	 */
 	String MENU_TITLE_EDIT_PASTE = SystemConfigHelper.getInstance().getProMap().get("menu.title.edit.paste");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)-É¾³ı(L).
+	 * äºŒçº§èœå•(E)-åˆ é™¤(L).
 	 */
 	String MENU_TITLE_EDIT_DELETE = SystemConfigHelper.getInstance().getProMap().get("menu.title.edit.delete");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)-²éÕÒ(F).
+	 * äºŒçº§èœå•(E)-æŸ¥æ‰¾(F).
 	 */
 	String MENU_TITLE_EDIT_FIND = SystemConfigHelper.getInstance().getProMap().get("menu.title.edit.find");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)-²éÕÒÏÂÒ»¸ö(N).
+	 * äºŒçº§èœå•(E)-æŸ¥æ‰¾ä¸‹ä¸€ä¸ª(N).
 	 */
 	String MENU_TITLE_EDIT_FIND_NEXT = SystemConfigHelper.getInstance().getProMap().get("menu.title.edit.find.next");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)-Ìæ»»(R).
+	 * äºŒçº§èœå•(E)-æ›¿æ¢(R).
 	 */
 	String MENU_TITLE_EDIT_REPLACE = SystemConfigHelper.getInstance().getProMap().get("menu.title.edit.replace");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)-×ªµ½(G).
+	 * äºŒçº§èœå•(E)-è½¬åˆ°(G).
 	 */
 	String MENU_TITLE_EDIT_GOTO = SystemConfigHelper.getInstance().getProMap().get("menu.title.edit.goto");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)-È«Ñ¡(A).
+	 * äºŒçº§èœå•(E)-å…¨é€‰(A).
 	 */
 	String MENU_TITLE_EDIT_ALL = SystemConfigHelper.getInstance().getProMap().get("menu.title.edit.all");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)-Ê±¼ä/ÈÕÆÚ(D).
+	 * äºŒçº§èœå•(E)-æ—¶é—´/æ—¥æœŸ(D).
 	 */
 	String MENU_TITLE_EDIT_DATE = SystemConfigHelper.getInstance().getProMap().get("menu.title.edit.date");
 	
 	/**
-	 * Ò»¼¶²Ëµ¥-¸ñÊ½(O).
+	 * ä¸€çº§èœå•-æ ¼å¼(O).
 	 */
 	String MENU_TITLE_FORMAT = SystemConfigHelper.getInstance().getProMap().get("menu.title.format");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥-×Ô¶¯»»ĞĞ(W).
+	 * äºŒçº§èœå•-è‡ªåŠ¨æ¢è¡Œ(W).
 	 */
 	String MENU_TITLE_FORMAT_WRAP = SystemConfigHelper.getInstance().getProMap().get("menu.title.format.wrap");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥-×ÖÌå(F).
+	 * äºŒçº§èœå•-å­—ä½“(F).
 	 */
 	String MENU_TITLE_FORMAT_FONT = SystemConfigHelper.getInstance().getProMap().get("menu.title.format.font");
 	
 	/**
-	 * Ò»¼¶²Ëµ¥-²é¿´(V).
+	 * ä¸€çº§èœå•-æŸ¥çœ‹(V).
 	 */
 	String MENU_TITLE_VIEW = SystemConfigHelper.getInstance().getProMap().get("menu.title.view");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥-×´Ì¬À¸(V).
+	 * äºŒçº§èœå•-çŠ¶æ€æ (V).
 	 */
 	String MENU_TITLE_VIEW_STATUS_BAR = SystemConfigHelper.getInstance().getProMap().get("menu.title.view.status.bar");
 	
 	/**
-	 * Ò»¼¶²Ëµ¥-°ï×é(H).
+	 * ä¸€çº§èœå•-å¸®ç»„(H).
 	 */
 	String MENU_TITLE_HELP = SystemConfigHelper.getInstance().getProMap().get("menu.title.help");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥-²é¿´°ï×é(H).
+	 * äºŒçº§èœå•-æŸ¥çœ‹å¸®ç»„(H).
 	 */
 	String MENU_TITLE_HELP_VIEW = SystemConfigHelper.getInstance().getProMap().get("menu.title.help.view");
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥-¹ØÓÚ¼ÇÊÂ±¾(A).
+	 * äºŒçº§èœå•-å…³äºè®°äº‹æœ¬(A).
 	 */
 	String MENU_TITLE_HELP_ABOUT_NOTEPAD = SystemConfigHelper.getInstance().getProMap().get("menu.title.help.about.notepad");
 	

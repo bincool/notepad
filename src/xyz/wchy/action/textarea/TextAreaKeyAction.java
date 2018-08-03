@@ -2,10 +2,10 @@
 * @FileName: TextAreaKeyAction.java
 * @Package: xyz.wchy.action.textarea
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: TextAreaKeyAction.java: ÎÄ±¾Óò°´¼ü¼àÌıÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: TextAreaKeyAction.java: æ–‡æœ¬åŸŸæŒ‰é”®ç›‘å¬äº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.textarea;
@@ -23,18 +23,18 @@ import xyz.wchy.utils.StringUtils;
 * 
 * @Description: 
 * <p>
-* ÎÄ±¾Óò°´¼ü¼àÌıÊÂ¼ş.
+* æ–‡æœ¬åŸŸæŒ‰é”®ç›‘å¬äº‹ä»¶.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ23ÈÕ ÉÏÎç10:49:03.
+* @Date: 2018å¹´1æœˆ23æ—¥ ä¸Šåˆ10:49:03.
 * 
 */
 public class TextAreaKeyAction extends BaseData implements KeyListener 
@@ -64,7 +64,7 @@ public class TextAreaKeyAction extends BaseData implements KeyListener
 	{
 		JTextArea jTextArea = domain.getTextPane().getTextArea();
 		
-		// ÓĞ¼üÅÌ¼üÈëÔòĞèÒª°ÑÏà¹Ø°´Å¥ÉèÖÃ³É¿É¼û£º³·Ïú£¬²éÕÒ£¬²éÕÒÏÂÒ»´¦.
+		// æœ‰é”®ç›˜é”®å…¥åˆ™éœ€è¦æŠŠç›¸å…³æŒ‰é’®è®¾ç½®æˆå¯è§ï¼šæ’¤é”€ï¼ŒæŸ¥æ‰¾ï¼ŒæŸ¥æ‰¾ä¸‹ä¸€å¤„.
 		if(StringUtils.isNotEmpty(jTextArea.getText())) 
 		{
 			domain.getMenuEditFind().setEnabled(true);

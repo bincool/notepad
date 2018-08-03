@@ -2,10 +2,10 @@
 * @FileName: StringUtils.java
 * @Package: xyz.wchy.utils
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: StringUtils.java: ×Ö·û´®¹¤¾ßÀà.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: StringUtils.java: å­—ç¬¦ä¸²å·¥å…·ç±».
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.utils;
@@ -15,25 +15,25 @@ package xyz.wchy.utils;
 * 
 * @Description: 
 * <p>
-* ×Ö·û´®¹¤¾ßÀà.
+* å­—ç¬¦ä¸²å·¥å…·ç±».
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ21ÈÕ ÉÏÎç3:59:01.
+* @Date: 2018å¹´1æœˆ21æ—¥ ä¸Šåˆ3:59:01.
 * 
 */
 public class StringUtils 
 {
 	
 	/**
-	 * ×Ö·û´®Îª¿Õ.
+	 * å­—ç¬¦ä¸²ä¸ºç©º.
 	 * @param str
 	 * @return
 	 */
@@ -43,7 +43,7 @@ public class StringUtils
 	}
 	
 	/**
-	 * ×Ö·û´®²»Îª¿Õ.
+	 * å­—ç¬¦ä¸²ä¸ä¸ºç©º.
 	 * @param str
 	 * @return
 	 */

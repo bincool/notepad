@@ -2,10 +2,10 @@
 * @FileName: SystemConstant.java
 * @Package: xyz.wchy.constant
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: SystemConstant.java: ¼ÇÊÂ±¾³£Á¿-²»¿ÉÅäÖÃ.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: SystemConstant.java: è®°äº‹æœ¬å¸¸é‡-ä¸å¯é…ç½®.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.constant;
@@ -17,65 +17,65 @@ import java.io.File;
 * 
 * @Description: 
 * <p>
-* ¼ÇÊÂ±¾³£Á¿-²»¿ÉÅäÖÃ.
+* è®°äº‹æœ¬å¸¸é‡-ä¸å¯é…ç½®.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ19ÈÕ ÉÏÎç11:02:34.
+* @Date: 2018å¹´1æœˆ19æ—¥ ä¸Šåˆ11:02:34.
 * 
 */
 public interface SystemConstant 
 {
 	
     /**
-     * LinuxÂ·¾¶·Ö¸î×Ö·û.
+     * Linuxè·¯å¾„åˆ†å‰²å­—ç¬¦.
      */
     char DIR_SEPARATOR_UNIX = '/';
     
     /**
-     * WindowsÂ·¾¶·Ö¸î×Ö·û.
+     * Windowsè·¯å¾„åˆ†å‰²å­—ç¬¦.
      */
     char DIR_SEPARATOR_WINDOWS = '\\';
     
     /**
-     * Â·¾¶·Ö¸ô×Ö·û.
+     * è·¯å¾„åˆ†éš”å­—ç¬¦.
      */
     char DIR_SEPARATOR = File.separatorChar;
     
     /**
-     * Linux»»ĞĞ·û.
+     * Linuxæ¢è¡Œç¬¦.
      */
     String LINE_SEPARATOR_UNIX = "\n";
     
     /**
-     * Windows»»ĞĞ·û.
+     * Windowsæ¢è¡Œç¬¦.
      */
     String LINE_SEPARATOR_WINDOWS = "\r\n";
     
     /**
-     * ±àÂë¸ñÊ½gb2312.
+     * ç¼–ç æ ¼å¼gb2312.
      */
     String ENCODE_GB2312 = "gb2312";
     
     /**
-     * ±àÂë¸ñÊ½UTF-8.
+     * ç¼–ç æ ¼å¼UTF-8.
      */
     String ENCODE_UTF8 = "UTF-8";
     
     /**
-     * ±àÂë¸ñÊ½Unicode.
+     * ç¼–ç æ ¼å¼Unicode.
      */
     String ENCODE_UNICODE = "Unicode";
     
     /**
-     * ±àÂë¸ñÊ½UTF-16.
+     * ç¼–ç æ ¼å¼UTF-16.
      */
     String ENCODE_UTF16 = "UTF-16";
     

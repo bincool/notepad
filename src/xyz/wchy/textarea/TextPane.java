@@ -2,10 +2,10 @@
 * @FileName: TextPane.java
 * @Package: xyz.wchy.textarea
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: TextPane.java: ´ø¹ö¶¯ÌõµÄÎÄ±¾Óò.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: TextPane.java: å¸¦æ»šåŠ¨æ¡çš„æ–‡æœ¬åŸŸ.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.textarea;
@@ -22,52 +22,52 @@ import xyz.wchy.utils.Logger;
 * 
 * @Description: 
 * <p>
-* ´ø¹ö¶¯ÌõµÄÎÄ±¾Óò.
+* å¸¦æ»šåŠ¨æ¡çš„æ–‡æœ¬åŸŸ.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ15ÈÕ ÏÂÎç11:32:38.
+* @Date: 2018å¹´1æœˆ15æ—¥ ä¸‹åˆ11:32:38.
 * 
 */
 public class TextPane 
 {
 	
 	/**
-	 * ÈÕÖ¾¶ÔÏó.
+	 * æ—¥å¿—å¯¹è±¡.
 	 */
 	protected static final Logger LOGGER = Logger.getLogger();
 	
 	/**
-	 * ÎÄ±¾Óò.
+	 * æ–‡æœ¬åŸŸ.
 	 */
 	private JTextArea textArea = null;
 	
 	/**
-	 * ¹ö¶¯Ìõ.
+	 * æ»šåŠ¨æ¡.
 	 */
 	private JScrollPane scrollPane = null;
 	
 	/**
-	 * ¹¹Ôìº¯Êı.
+	 * æ„é€ å‡½æ•°.
 	 */
 	public TextPane() 
 	{
-		// ³õÊ¼»¯ÎÄ±¾Óò.
+		// åˆå§‹åŒ–æ–‡æœ¬åŸŸ.
 		initTextArea();
 		
-		// ¸øÎÄ±¾Óò°ó¶¨ÊÂ¼ş.
+		// ç»™æ–‡æœ¬åŸŸç»‘å®šäº‹ä»¶.
 		bindEvent();
 	}
 
 	/**
-	 * »ñÈ¡textArea.
+	 * è·å–textArea.
 	 * @return
 	 *     textArea.
 	 */
@@ -78,7 +78,7 @@ public class TextPane
 
 
 	/**
-	 * »ñÈ¡scrollPane.
+	 * è·å–scrollPane.
 	 * @return
 	 *     scrollPane.
 	 */
@@ -88,27 +88,27 @@ public class TextPane
 	}
 
 	/**
-	 * ³õÊ¼»¯ÎÄ±¾Óò.
+	 * åˆå§‹åŒ–æ–‡æœ¬åŸŸ.
 	 */
 	private void initTextArea() 
 	{
-		// ÎÄ±¾Óò.
+		// æ–‡æœ¬åŸŸ.
 		textArea = new JTextArea();
 		
-		// ´ø¹ö¶¯ÌõµÄÎÄ±¾Óò.
+		// å¸¦æ»šåŠ¨æ¡çš„æ–‡æœ¬åŸŸ.
         scrollPane = new JScrollPane(textArea);  
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 	}
 	
 	/**
-	 * ¸øÎÄ±¾Óò°ó¶¨ÊÂ¼ş.
+	 * ç»™æ–‡æœ¬åŸŸç»‘å®šäº‹ä»¶.
 	 */
 	private void bindEvent() 
 	{
-        // Ìí¼Ó¼üÅÌ¼àÌıÊÂ¼ş.
+        // æ·»åŠ é”®ç›˜ç›‘å¬äº‹ä»¶.
         textArea.addKeyListener(new TextAreaKeyAction());
         
-        // Ìí¼ÓÊó±ê¼àÌıÊÂ¼ş.
+        // æ·»åŠ é¼ æ ‡ç›‘å¬äº‹ä»¶.
         textArea.addMouseListener(new TextAreaMouseAction());
 	}
 	

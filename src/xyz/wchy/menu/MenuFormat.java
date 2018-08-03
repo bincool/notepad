@@ -2,10 +2,10 @@
 * @FileName: MenuFormat.java
 * @Package: xyz.wchy.menu
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: MenuFormat.java: ¸ñÊ½²Ù×÷²Ëµ¥.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: MenuFormat.java: æ ¼å¼æ“ä½œèœå•.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.menu;
@@ -25,40 +25,40 @@ import xyz.wchy.menu.base.MenuBase;
 * 
 * @Description: 
 * <p>
-* ¸ñÊ½²Ù×÷²Ëµ¥£º¸ñÊ½(O)¡¢×Ô¶¯»»ĞĞ(W)¡¢×ÖÌå(F).
+* æ ¼å¼æ“ä½œèœå•ï¼šæ ¼å¼(O)ã€è‡ªåŠ¨æ¢è¡Œ(W)ã€å­—ä½“(F).
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ15ÈÕ ÏÂÎç11:29:39.
+* @Date: 2018å¹´1æœˆ15æ—¥ ä¸‹åˆ11:29:39.
 * 
 */
 public class MenuFormat extends MenuBase 
 {
 	
 	/**
-	 * Ò»¼¶²Ëµ¥£¬¸ñÊ½(O).
+	 * ä¸€çº§èœå•ï¼Œæ ¼å¼(O).
 	 */
 	private JMenu menu = new JMenu(NodePadConstant.MENU_TITLE_FORMAT);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬×Ô¶¯»»ĞĞ(W).
+	 * äºŒçº§èœå•ï¼Œè‡ªåŠ¨æ¢è¡Œ(W).
 	 */
 	private JMenuItem menuFormatWrap = domain.getMenuFormatWrap();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬×ÖÌå(F).
+	 * äºŒçº§èœå•ï¼Œå­—ä½“(F).
 	 */
 	private JMenuItem menuFormatFont = domain.getMenuFormatFont();
 	
 	/**
-	 * ¹¹Ôìº¯Êı.
+	 * æ„é€ å‡½æ•°.
 	 */
 	public MenuFormat() 
 	{
@@ -67,7 +67,7 @@ public class MenuFormat extends MenuBase
 	}
 
 	/**
-	 * »ñÈ¡menu.
+	 * è·å–menu.
 	 * @return
 	 *     menu.
 	 */

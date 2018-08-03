@@ -2,10 +2,10 @@
 * @FileName: FileSaveAsAction.java
 * @Package: xyz.wchy.action.file
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: FileSaveAsAction.java: ÎÄ¼ş²Ù×÷²Ëµ¥-Áí´æÎªÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: FileSaveAsAction.java: æ–‡ä»¶æ“ä½œèœå•-å¦å­˜ä¸ºäº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.file;
@@ -23,18 +23,18 @@ import xyz.wchy.utils.FileHelper;
 * 
 * @Description: 
 * <p>
-* ÎÄ¼ş²Ù×÷²Ëµ¥-Áí´æÎªÊÂ¼ş£ºÁí´æÎªÖ®Ç°ÏÈÌáÊ¾±£´æµ±Ç°ÎÄ±¾Óò.
+* æ–‡ä»¶æ“ä½œèœå•-å¦å­˜ä¸ºäº‹ä»¶ï¼šå¦å­˜ä¸ºä¹‹å‰å…ˆæç¤ºä¿å­˜å½“å‰æ–‡æœ¬åŸŸ.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ16ÈÕ ÏÂÎç1:14:25.
+* @Date: 2018å¹´1æœˆ16æ—¥ ä¸‹åˆ1:14:25.
 * 
 */
 public class FileSaveAsAction extends BaseAction 
@@ -48,10 +48,10 @@ public class FileSaveAsAction extends BaseAction
 	{
 		LOGGER.info(FileSaveAsAction.class, "Start to save as.");
 		
-		// ´ò¿ª±£´æ¿ò.
+		// æ‰“å¼€ä¿å­˜æ¡†.
         JFileChooser jFileChooser = new JFileChooser();
         
-        // Ñ¡ÔñÎÄ¼ş.  
+        // é€‰æ‹©æ–‡ä»¶.  
         int value = jFileChooser.showSaveDialog(null);  
         if (value == JFileChooser.APPROVE_OPTION) 
         {

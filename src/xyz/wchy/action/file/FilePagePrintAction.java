@@ -2,10 +2,10 @@
 * @FileName: FilePagePrintAction.java
 * @Package: xyz.wchy.action.file
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: FilePagePrintAction.java: ÎÄ¼ş²Ù×÷²Ëµ¥-´òÓ¡ÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: FilePagePrintAction.java: æ–‡ä»¶æ“ä½œèœå•-æ‰“å°äº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.file;
@@ -22,18 +22,18 @@ import xyz.wchy.action.base.BaseAction;
 * 
 * @Description: 
 * <p>
-* ÎÄ¼ş²Ù×÷²Ëµ¥-´òÓ¡ÊÂ¼ş.
+* æ–‡ä»¶æ“ä½œèœå•-æ‰“å°äº‹ä»¶.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ16ÈÕ ÏÂÎç1:15:19.
+* @Date: 2018å¹´1æœˆ16æ—¥ ä¸‹åˆ1:15:19.
 * 
 */
 public class FilePagePrintAction extends BaseAction 
@@ -45,7 +45,7 @@ public class FilePagePrintAction extends BaseAction
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		PrintJob printJob = Toolkit.getDefaultToolkit().getPrintJob(domain.getFrame(), "´òÓ¡", null);
+		PrintJob printJob = Toolkit.getDefaultToolkit().getPrintJob(domain.getFrame(), "æ‰“å°", null);
 		Graphics graphics = printJob.getGraphics();
 		domain.getTextPane().getTextArea().printAll(graphics);
 		printJob.end();

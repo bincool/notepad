@@ -2,10 +2,10 @@
 * @FileName: EditGotoAction.java
 * @Package: xyz.wchy.action.edit
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: EditGotoAction.java: ±à¼­²Ù×÷²Ëµ¥-×ªµ½ÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: EditGotoAction.java: ç¼–è¾‘æ“ä½œèœå•-è½¬åˆ°äº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.edit;
@@ -24,18 +24,18 @@ import xyz.wchy.utils.StringUtils;
 * 
 * @Description: 
 * <p>
-* ±à¼­²Ù×÷²Ëµ¥-×ªµ½ÊÂ¼ş.
+* ç¼–è¾‘æ“ä½œèœå•-è½¬åˆ°äº‹ä»¶.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ21ÈÕ ÉÏÎç12:46:50.
+* @Date: 2018å¹´1æœˆ21æ—¥ ä¸Šåˆ12:46:50.
 * 
 */
 public class EditGotoAction extends BaseAction 
@@ -50,16 +50,16 @@ public class EditGotoAction extends BaseAction
 	@Override
 	public void actionPerformed(ActionEvent event) 
 	{
-		// »ñÈ¡ÎÄ±¾Óò.
+		// è·å–æ–‡æœ¬åŸŸ.
 		JTextArea jTextArea = DomainHelper.getInstance().getTextPane().getTextArea();
 		
-		// È¡µÃ×ÜĞĞÊı.
+		// å–å¾—æ€»è¡Œæ•°.
 		int totalLineCount = jTextArea.getLineCount();
 		if (totalLineCount < 1) 
 		{
 			return;
 		}
-		String line = JOptionPane.showInputDialog(null, "ĞĞºÅ(L):\n", "×ªµ½Ö¸¶¨ĞĞ", JOptionPane.PLAIN_MESSAGE);
+		String line = JOptionPane.showInputDialog(null, "è¡Œå·(L):\n", "è½¬åˆ°æŒ‡å®šè¡Œ", JOptionPane.PLAIN_MESSAGE);
 		if (StringUtils.isEmpty(line)) 
 		{
 			return;
@@ -72,17 +72,17 @@ public class EditGotoAction extends BaseAction
 				return;
 			}
 			
-			// JTextAreaÆğÊ¼ĞĞºÅÊÇ0£¬ËùÒÔ´Ë´¦×ö¼õÒ»´¦Àí.
+			// JTextAreaèµ·å§‹è¡Œå·æ˜¯0ï¼Œæ‰€ä»¥æ­¤å¤„åšå‡ä¸€å¤„ç†.
 			int selectionStart = jTextArea.getLineStartOffset(intLine - 1);
 			int selectionEnd = jTextArea.getLineEndOffset(intLine - 1);
 
-			// Èç¹ûÊÇ²»ÊÇ×îºóÒ»ĞĞ£¬selectionEnd×ö¼õÒ»´¦Àí£¬ÊÇÎªÁËÊ¹¹â±êÓëÑ¡ÖĞĞĞÔÚÍ¬Ò»ĞĞ.
+			// å¦‚æœæ˜¯ä¸æ˜¯æœ€åä¸€è¡Œï¼ŒselectionEndåšå‡ä¸€å¤„ç†ï¼Œæ˜¯ä¸ºäº†ä½¿å…‰æ ‡ä¸é€‰ä¸­è¡Œåœ¨åŒä¸€è¡Œ.
 			if (intLine != totalLineCount) 
 			{
 				selectionEnd--;
 			}
 
-			// »ñµÃ½¹µã.
+			// è·å¾—ç„¦ç‚¹.
 			jTextArea.requestFocus();
 
 			jTextArea.setSelectionStart(selectionStart);

@@ -2,10 +2,10 @@
 * @FileName: EditUndoAction.java
 * @Package: xyz.wchy.action.edit
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: EditUndoAction.java: ±à¼­²Ù×÷²Ëµ¥-³·ÏúÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: EditUndoAction.java: ç¼–è¾‘æ“ä½œèœå•-æ’¤é”€äº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.edit;
@@ -22,25 +22,25 @@ import xyz.wchy.utils.DomainHelper;
 * 
 * @Description: 
 * <p>
-* ±à¼­²Ù×÷²Ëµ¥-³·ÏúÊÂ¼ş.
+* ç¼–è¾‘æ“ä½œèœå•-æ’¤é”€äº‹ä»¶.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ21ÈÕ ÉÏÎç12:17:42.
+* @Date: 2018å¹´1æœˆ21æ—¥ ä¸Šåˆ12:17:42.
 * 
 */
 public class EditUndoAction extends BaseAction
 {
 	
 	/**
-	 * ³·Ïú¹ÜÀí.
+	 * æ’¤é”€ç®¡ç†.
 	 */
 	private UndoManager undo = DomainHelper.getInstance().getUndo();
 
@@ -52,7 +52,7 @@ public class EditUndoAction extends BaseAction
 	{
 		LOGGER.info(EditUndoAction.class, "Start to undo.");
 		
-		// ³·Ïú.
+		// æ’¤é”€.
 		if(undo.canUndo())
 		{
 			undo.undo();

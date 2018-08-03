@@ -2,10 +2,10 @@
 * @FileName: EditCopyAction.java
 * @Package: xyz.wchy.action.edit
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: EditCopyAction.java: ±à¼­²Ù×÷²Ëµ¥-¿½±´ÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: EditCopyAction.java: ç¼–è¾‘æ“ä½œèœå•-æ‹·è´äº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.edit;
@@ -22,18 +22,18 @@ import xyz.wchy.utils.DomainHelper;
 * 
 * @Description: 
 * <p>
-* ±à¼­²Ù×÷²Ëµ¥-¿½±´ÊÂ¼ş.
+* ç¼–è¾‘æ“ä½œèœå•-æ‹·è´äº‹ä»¶.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ21ÈÕ ÉÏÎç12:41:00.
+* @Date: 2018å¹´1æœˆ21æ—¥ ä¸Šåˆ12:41:00.
 * 
 */
 public class EditCopyAction extends BaseAction 
@@ -45,10 +45,10 @@ public class EditCopyAction extends BaseAction
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		// »ñÈ¡ÎÄ±¾Óò.
+		// è·å–æ–‡æœ¬åŸŸ.
 		JTextArea jTextArea = DomainHelper.getInstance().getTextPane().getTextArea();
 				
-		// Ö±½Óµ÷ÓÃ×Ô´øµÄº¯Êı.
+		// ç›´æ¥è°ƒç”¨è‡ªå¸¦çš„å‡½æ•°.
 		jTextArea.copy();
 	}
 	

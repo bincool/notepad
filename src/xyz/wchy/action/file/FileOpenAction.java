@@ -2,10 +2,10 @@
 * @FileName: FileOpenAction.java
 * @Package: xyz.wchy.action.file
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: FileOpenAction.java: ÎÄ¼ş²Ù×÷²Ëµ¥-´ò¿ªÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: FileOpenAction.java: æ–‡ä»¶æ“ä½œèœå•-æ‰“å¼€äº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.file;
@@ -24,49 +24,49 @@ import xyz.wchy.utils.StringUtils;
 * 
 * @Description: 
 * <p>
-* ÎÄ¼ş²Ù×÷²Ëµ¥-´ò¿ªÊÂ¼ş.
+* æ–‡ä»¶æ“ä½œèœå•-æ‰“å¼€äº‹ä»¶.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ16ÈÕ ÏÂÎç1:12:47.
+* @Date: 2018å¹´1æœˆ16æ—¥ ä¸‹åˆ1:12:47.
 * 
 */
 public class FileOpenAction extends BaseAction 
 {
 
-	/* ´ò¿ªÎÄ¼şÇ°Ó¦¸ÃÌáÊ¾ÊÇ·ñÏÈ±£´æµ±Ç°ÎÄ¼ş.
+	/* æ‰“å¼€æ–‡ä»¶å‰åº”è¯¥æç¤ºæ˜¯å¦å…ˆä¿å­˜å½“å‰æ–‡ä»¶.
 	 * (non-Javadoc)
 	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
 	public void actionPerformed(ActionEvent event) 
 	{ 
-		// ÎÄ¼şÑ¡Ôñ×é¼ş.
+		// æ–‡ä»¶é€‰æ‹©ç»„ä»¶.
 		JFileChooser jFileChooser = new JFileChooser();
 		
-		// ÉèÖÃÃû×Ö.
-		jFileChooser.setDialogTitle("ÇëÑ¡ÔñÎÄ¼ş...");
+		// è®¾ç½®åå­—.
+		jFileChooser.setDialogTitle("è¯·é€‰æ‹©æ–‡ä»¶...");
 		
-		// Ä¬ÈÏ·½Ê½.
+		// é»˜è®¤æ–¹å¼.
 		int value = jFileChooser.showOpenDialog(domain.getFrame());
 		
-		// ´ò¿ªÁËÎÄ¼ş,ĞèÒª½«ÎÄ¼şÂ·¾¶±£´æµ½ÁìÓò¶ÔÏó.
+		// æ‰“å¼€äº†æ–‡ä»¶,éœ€è¦å°†æ–‡ä»¶è·¯å¾„ä¿å­˜åˆ°é¢†åŸŸå¯¹è±¡.
 		if (value == JFileChooser.APPROVE_OPTION) 
 		{
-			// ÏÔÊ¾.
+			// æ˜¾ç¤º.
 			jFileChooser.setVisible(true);
 			
-			// µÃµ½ÓÃ»§Ñ¡ÔñµÄÎÄ¼şÂ·¾¶.
+			// å¾—åˆ°ç”¨æˆ·é€‰æ‹©çš„æ–‡ä»¶è·¯å¾„.
 			String fileName = jFileChooser.getSelectedFile().getAbsolutePath();
 			
-			// ¶ÁÈ¡ÎÄ¼şÄÚÈİ.
+			// è¯»å–æ–‡ä»¶å†…å®¹.
 			String text = FileHelper.readToString(fileName);
 			DomainHelper.getInstance().getTextPane().getTextArea().setText(text);
 			DomainHelper.getInstance().setFileName(fileName);

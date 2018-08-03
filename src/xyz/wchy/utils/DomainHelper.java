@@ -2,10 +2,10 @@
 * @FileName: DomainHelper.java
 * @Package: xyz.wchy.utils
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: DomainHelper.java: ÁìÓò¶ÔÏó°ïÖúÀà.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: DomainHelper.java: é¢†åŸŸå¯¹è±¡å¸®åŠ©ç±».
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.utils;
@@ -29,202 +29,202 @@ import xyz.wchy.textarea.TextPane;
 * 
 * @Description: 
 * <p>
-* ÁìÓò¶ÔÏó°ïÖúÀà£ºÎÄ±¾Óò¡¢iframe¡¢....
+* é¢†åŸŸå¯¹è±¡å¸®åŠ©ç±»ï¼šæ–‡æœ¬åŸŸã€iframeã€....
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ19ÈÕ ÏÂÎç1:38:59.
+* @Date: 2018å¹´1æœˆ19æ—¥ ä¸‹åˆ1:38:59.
 * 
 */
 public class DomainHelper 
 {
 	
 	/**
-	 * Ö÷´°Ìå.
+	 * ä¸»çª—ä½“.
 	 */
 	private JFrame frame = new JFrame();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(F)£¬ĞÂ½¨(N).
+	 * äºŒçº§èœå•(F)ï¼Œæ–°å»º(N).
 	 */
 	private JMenuItem menuFileNew = new JMenuItem(NodePadConstant.MENU_TITLE_FILE_NEW);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(F)£¬´ò¿ª(O).
+	 * äºŒçº§èœå•(F)ï¼Œæ‰“å¼€(O).
 	 */
 	private JMenuItem menuFileOpen = new JMenuItem(NodePadConstant.MENU_TITLE_FILE_OPEN, KeyEvent.VK_O);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(F)£¬±£´æ(S).
+	 * äºŒçº§èœå•(F)ï¼Œä¿å­˜(S).
 	 */
 	private JMenuItem menuFileSave = new JMenuItem(NodePadConstant.MENU_TITLE_FILE_SAVE);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(F)£¬Áí´æÎª(A).
+	 * äºŒçº§èœå•(F)ï¼Œå¦å­˜ä¸º(A).
 	 */
 	private JMenuItem menuFileSaveAs = new JMenuItem(NodePadConstant.MENU_TITLE_FILE_SAVE_AS);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(F)£¬Ò³ÃæÉèÖÃ(U).
+	 * äºŒçº§èœå•(F)ï¼Œé¡µé¢è®¾ç½®(U).
 	 */
 	private JMenuItem menuFilePageSet = new JMenuItem(NodePadConstant.MENU_TITLE_FILE_PAGE_SET);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(F)£¬´òÓ¡(P).
+	 * äºŒçº§èœå•(F)ï¼Œæ‰“å°(P).
 	 */
 	private JMenuItem menuFilePagePrint = new JMenuItem(NodePadConstant.MENU_TITLE_FILE_PAGE_PRINT);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(F)£¬ÍË³ö(X).
+	 * äºŒçº§èœå•(F)ï¼Œé€€å‡º(X).
 	 */
 	private JMenuItem menuFileExit = new JMenuItem(NodePadConstant.MENU_TITLE_FILE_EXIT);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)£¬³·Ïú(U).
+	 * äºŒçº§èœå•(E)ï¼Œæ’¤é”€(U).
 	 */
 	private JMenuItem menuEditUndo = new JMenuItem(NodePadConstant.MENU_TITLE_EDIT_UNDO);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)£¬¼ôÇĞ(T).
+	 * äºŒçº§èœå•(E)ï¼Œå‰ªåˆ‡(T).
 	 */
 	private JMenuItem menuEditTrim = new JMenuItem(NodePadConstant.MENU_TITLE_EDIT_TRIM);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)£¬¸´ÖÆ(C).
+	 * äºŒçº§èœå•(E)ï¼Œå¤åˆ¶(C).
 	 */
 	private JMenuItem menuEditCopy = new JMenuItem(NodePadConstant.MENU_TITLE_EDIT_COPY);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)£¬Õ³Ìù(P).
+	 * äºŒçº§èœå•(E)ï¼Œç²˜è´´(P).
 	 */
 	private JMenuItem menuEditPaste = new JMenuItem(NodePadConstant.MENU_TITLE_EDIT_PASTE);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)£¬É¾³ı(L).
+	 * äºŒçº§èœå•(E)ï¼Œåˆ é™¤(L).
 	 */
 	private JMenuItem menuEditDelete = new JMenuItem(NodePadConstant.MENU_TITLE_EDIT_DELETE);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)£¬²éÕÒ(F).
+	 * äºŒçº§èœå•(E)ï¼ŒæŸ¥æ‰¾(F).
 	 */
 	private JMenuItem menuEditFind = new JMenuItem(NodePadConstant.MENU_TITLE_EDIT_FIND);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)£¬²éÕÒÏÂÒ»¸ö(N).
+	 * äºŒçº§èœå•(E)ï¼ŒæŸ¥æ‰¾ä¸‹ä¸€ä¸ª(N).
 	 */
 	private JMenuItem menuEditFindNext = new JMenuItem(NodePadConstant.MENU_TITLE_EDIT_FIND_NEXT);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)£¬Ìæ»»(R).
+	 * äºŒçº§èœå•(E)ï¼Œæ›¿æ¢(R).
 	 */
 	private JMenuItem menuEditReplace = new JMenuItem(NodePadConstant.MENU_TITLE_EDIT_REPLACE);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)£¬×ªµ½(G).
+	 * äºŒçº§èœå•(E)ï¼Œè½¬åˆ°(G).
 	 */
 	private JMenuItem menuEditGoto = new JMenuItem(NodePadConstant.MENU_TITLE_EDIT_GOTO);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)£¬È«Ñ¡(A).
+	 * äºŒçº§èœå•(E)ï¼Œå…¨é€‰(A).
 	 */
 	private JMenuItem menuEditAll = new JMenuItem(NodePadConstant.MENU_TITLE_EDIT_ALL);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(E)£¬Ê±¼ä/ÈÕÆÚ(D).
+	 * äºŒçº§èœå•(E)ï¼Œæ—¶é—´/æ—¥æœŸ(D).
 	 */
 	private JMenuItem menuEditDate = new JMenuItem(NodePadConstant.MENU_TITLE_EDIT_DATE);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(O)£¬×Ô¶¯»»ĞĞ(W).
+	 * äºŒçº§èœå•(O)ï¼Œè‡ªåŠ¨æ¢è¡Œ(W).
 	 */
 	private JMenuItem menuFormatWrap = new JMenuItem(NodePadConstant.MENU_TITLE_FORMAT_WRAP);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(O)£¬×ÖÌå(F).
+	 * äºŒçº§èœå•(O)ï¼Œå­—ä½“(F).
 	 */
 	private JMenuItem menuFormatFont = new JMenuItem(NodePadConstant.MENU_TITLE_FORMAT_FONT);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(V)£¬×´Ì¬À¸(S).
+	 * äºŒçº§èœå•(V)ï¼ŒçŠ¶æ€æ (S).
 	 */
 	private JMenuItem menuViewStatusBar = new JMenuItem(NodePadConstant.MENU_TITLE_VIEW_STATUS_BAR);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(H)£¬²é¿´°ïÖú(H).
+	 * äºŒçº§èœå•(H)ï¼ŒæŸ¥çœ‹å¸®åŠ©(H).
 	 */
 	private JMenuItem menuHelpView = new JMenuItem(NodePadConstant.MENU_TITLE_HELP_VIEW);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥(H)£¬¹ØÓÚ¼ÇÊÂ±¾(A).
+	 * äºŒçº§èœå•(H)ï¼Œå…³äºè®°äº‹æœ¬(A).
 	 */
 	private JMenuItem menuHelpAboutNotepad = new JMenuItem(NodePadConstant.MENU_TITLE_HELP_ABOUT_NOTEPAD);
 	
 	/**
-	 * ×´Ì¬À¸.
+	 * çŠ¶æ€æ .
 	 */
 	private JToolBar toolState = new JToolBar();
 	
 	/**
-	 * µ±Ç°ÎÄ¼şÃû-°üÀ¨Â·¾¶.
+	 * å½“å‰æ–‡ä»¶å-åŒ…æ‹¬è·¯å¾„.
 	 */
 	private String fileName;
 	
 	/**
-	 * ³·Ïú¹ÜÀí.
+	 * æ’¤é”€ç®¡ç†.
 	 */
 	private UndoManager undo;
 	
 	/**
-	 * ´ø¹ö¶¯ÌõµÄÎÄ±¾Óò.
+	 * å¸¦æ»šåŠ¨æ¡çš„æ–‡æœ¬åŸŸ.
 	 */
 	private TextPane textPane;
 	
 	/**
-	 * ²éÕÒ±à¼­¿ò.
+	 * æŸ¥æ‰¾ç¼–è¾‘æ¡†.
 	 */
 	private JTextField findText = new JTextField(16);
 	
 	/**
-	 * Ìæ»»±à¼­¿ò.
+	 * æ›¿æ¢ç¼–è¾‘æ¡†.
 	 */
 	private JTextField replaceText = new JTextField(16);
     
 	/**
-	 * Çø·Ö´óĞ¡Ğ´.
+	 * åŒºåˆ†å¤§å°å†™.
 	 */
-	private JCheckBox matchCase = new JCheckBox("Çø·Ö´óĞ¡Ğ´");
+	private JCheckBox matchCase = new JCheckBox("åŒºåˆ†å¤§å°å†™");
     
 	/**
-	 * ÏòÉÏ²éÕÒ.
+	 * å‘ä¸ŠæŸ¥æ‰¾.
 	 */
-	private JRadioButton up = new JRadioButton("ÏòÉÏ(U)");
+	private JRadioButton up = new JRadioButton("å‘ä¸Š(U)");
     
 	/**
-	 * ÏòÏÂ²éÕÒ.
+	 * å‘ä¸‹æŸ¥æ‰¾.
 	 */
-	private JRadioButton down = new JRadioButton("ÏòÏÂ(D)");
+	private JRadioButton down = new JRadioButton("å‘ä¸‹(D)");
 	
 	/**
-	 * ÁìÓò¶ÔÏóÊµÀı.
+	 * é¢†åŸŸå¯¹è±¡å®ä¾‹.
 	 */
 	private static final DomainHelper instance = new DomainHelper();
 	
 	/**
-	 * Ë½ÓĞ¹¹Ôìº¯Êı.
+	 * ç§æœ‰æ„é€ å‡½æ•°.
 	 */
 	private DomainHelper() 
 	{
 	}
 	
 	/**
-	 * »ñÈ¡ÁìÓò¶ÔÏóÊµÀı.
+	 * è·å–é¢†åŸŸå¯¹è±¡å®ä¾‹.
 	 * @return
 	 */
 	public static DomainHelper getInstance() 
@@ -233,15 +233,15 @@ public class DomainHelper
 	}
 
 	/**
-	 * ³õÊ¼»¯ÏµÍ³ÁìÓò¶ÔÏó.
+	 * åˆå§‹åŒ–ç³»ç»Ÿé¢†åŸŸå¯¹è±¡.
 	 */
 	public void initDomain() 
 	{
-		// ³õÊ¼»¯ÉùÃ÷¶ÔÏó.
+		// åˆå§‹åŒ–å£°æ˜å¯¹è±¡.
 		undo = new UndoManager();
         textPane = new TextPane();
 		
-		// ³õÊ¼»¯"±à¼­"²Ëµ¥À¸.
+		// åˆå§‹åŒ–"ç¼–è¾‘"èœå•æ .
 		menuEditTrim.setEnabled(false);
         menuEditCopy.setEnabled(false);
         menuEditDelete.setEnabled(false);
@@ -251,17 +251,17 @@ public class DomainHelper
             menuEditFindNext.setEnabled(false);
         }
         
-        // ³õÊ¼»¯×´Ì¬À¸.
+        // åˆå§‹åŒ–çŠ¶æ€æ .
         toolState.setVisible(true);
         toolState.setFloatable(false);
         toolState.setPreferredSize(new Dimension(textPane.getTextArea().getSize().width, 20));
         
-        // Ìí¼Ó³·Ïú¹ÜÀíÆ÷.
+        // æ·»åŠ æ’¤é”€ç®¡ç†å™¨.
         textPane.getTextArea().getDocument().addUndoableEditListener(undo);
 	}
 
 	/**
-	 * »ñÈ¡frame.
+	 * è·å–frame.
 	 * @return
 	 *     frame.
 	 */
@@ -271,7 +271,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃframe.
+	 * è®¾ç½®frame.
 	 * @param
 	 *     frame.
 	 */
@@ -281,7 +281,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuFileNew.
+	 * è·å–menuFileNew.
 	 * @return
 	 *     menuFileNew.
 	 */
@@ -291,7 +291,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuFileNew.
+	 * è®¾ç½®menuFileNew.
 	 * @param
 	 *     menuFileNew.
 	 */
@@ -301,7 +301,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuFileOpen.
+	 * è·å–menuFileOpen.
 	 * @return
 	 *     menuFileOpen.
 	 */
@@ -311,7 +311,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuFileOpen.
+	 * è®¾ç½®menuFileOpen.
 	 * @param
 	 *     menuFileOpen.
 	 */
@@ -321,7 +321,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuFileSave.
+	 * è·å–menuFileSave.
 	 * @return
 	 *     menuFileSave.
 	 */
@@ -331,7 +331,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuFileSave.
+	 * è®¾ç½®menuFileSave.
 	 * @param
 	 *     menuFileSave.
 	 */
@@ -341,7 +341,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuFileSaveAs.
+	 * è·å–menuFileSaveAs.
 	 * @return
 	 *     menuFileSaveAs.
 	 */
@@ -351,7 +351,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuFileSaveAs.
+	 * è®¾ç½®menuFileSaveAs.
 	 * @param
 	 *     menuFileSaveAs.
 	 */
@@ -361,7 +361,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuFilePageSet.
+	 * è·å–menuFilePageSet.
 	 * @return
 	 *     menuFilePageSet.
 	 */
@@ -371,7 +371,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuFilePageSet.
+	 * è®¾ç½®menuFilePageSet.
 	 * @param
 	 *     menuFilePageSet.
 	 */
@@ -381,7 +381,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuFilePagePrint.
+	 * è·å–menuFilePagePrint.
 	 * @return
 	 *     menuFilePagePrint.
 	 */
@@ -391,7 +391,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuFilePagePrint.
+	 * è®¾ç½®menuFilePagePrint.
 	 * @param
 	 *     menuFilePagePrint.
 	 */
@@ -401,7 +401,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuFileExit.
+	 * è·å–menuFileExit.
 	 * @return
 	 *     menuFileExit.
 	 */
@@ -411,7 +411,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuFileExit.
+	 * è®¾ç½®menuFileExit.
 	 * @param
 	 *     menuFileExit.
 	 */
@@ -421,7 +421,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuEditUndo.
+	 * è·å–menuEditUndo.
 	 * @return
 	 *     menuEditUndo.
 	 */
@@ -431,7 +431,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuEditUndo.
+	 * è®¾ç½®menuEditUndo.
 	 * @param
 	 *     menuEditUndo.
 	 */
@@ -441,7 +441,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuEditTrim.
+	 * è·å–menuEditTrim.
 	 * @return
 	 *     menuEditTrim.
 	 */
@@ -451,7 +451,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuEditTrim.
+	 * è®¾ç½®menuEditTrim.
 	 * @param
 	 *     menuEditTrim.
 	 */
@@ -461,7 +461,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuEditCopy.
+	 * è·å–menuEditCopy.
 	 * @return
 	 *     menuEditCopy.
 	 */
@@ -471,7 +471,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuEditCopy.
+	 * è®¾ç½®menuEditCopy.
 	 * @param
 	 *     menuEditCopy.
 	 */
@@ -481,7 +481,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuEditPaste.
+	 * è·å–menuEditPaste.
 	 * @return
 	 *     menuEditPaste.
 	 */
@@ -491,7 +491,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuEditPaste.
+	 * è®¾ç½®menuEditPaste.
 	 * @param
 	 *     menuEditPaste.
 	 */
@@ -501,7 +501,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuEditDelete.
+	 * è·å–menuEditDelete.
 	 * @return
 	 *     menuEditDelete.
 	 */
@@ -511,7 +511,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuEditDelete.
+	 * è®¾ç½®menuEditDelete.
 	 * @param
 	 *     menuEditDelete.
 	 */
@@ -521,7 +521,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuEditFind.
+	 * è·å–menuEditFind.
 	 * @return
 	 *     menuEditFind.
 	 */
@@ -531,7 +531,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuEditFind.
+	 * è®¾ç½®menuEditFind.
 	 * @param
 	 *     menuEditFind.
 	 */
@@ -541,7 +541,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuEditFindNext.
+	 * è·å–menuEditFindNext.
 	 * @return
 	 *     menuEditFindNext.
 	 */
@@ -551,7 +551,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuEditFindNext.
+	 * è®¾ç½®menuEditFindNext.
 	 * @param
 	 *     menuEditFindNext.
 	 */
@@ -561,7 +561,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuEditReplace.
+	 * è·å–menuEditReplace.
 	 * @return
 	 *     menuEditReplace.
 	 */
@@ -571,7 +571,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuEditReplace.
+	 * è®¾ç½®menuEditReplace.
 	 * @param
 	 *     menuEditReplace.
 	 */
@@ -581,7 +581,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuEditGoto.
+	 * è·å–menuEditGoto.
 	 * @return
 	 *     menuEditGoto.
 	 */
@@ -591,7 +591,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuEditGoto.
+	 * è®¾ç½®menuEditGoto.
 	 * @param
 	 *     menuEditGoto.
 	 */
@@ -601,7 +601,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuEditAll.
+	 * è·å–menuEditAll.
 	 * @return
 	 *     menuEditAll.
 	 */
@@ -611,7 +611,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuEditAll.
+	 * è®¾ç½®menuEditAll.
 	 * @param
 	 *     menuEditAll.
 	 */
@@ -621,7 +621,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuEditDate.
+	 * è·å–menuEditDate.
 	 * @return
 	 *     menuEditDate.
 	 */
@@ -631,7 +631,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuEditDate.
+	 * è®¾ç½®menuEditDate.
 	 * @param
 	 *     menuEditDate.
 	 */
@@ -641,7 +641,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuFormatWrap.
+	 * è·å–menuFormatWrap.
 	 * @return
 	 *     menuFormatWrap.
 	 */
@@ -651,7 +651,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuFormatWrap.
+	 * è®¾ç½®menuFormatWrap.
 	 * @param
 	 *     menuFormatWrap.
 	 */
@@ -661,7 +661,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuFormatFont.
+	 * è·å–menuFormatFont.
 	 * @return
 	 *     menuFormatFont.
 	 */
@@ -671,7 +671,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuFormatFont.
+	 * è®¾ç½®menuFormatFont.
 	 * @param
 	 *     menuFormatFont.
 	 */
@@ -681,7 +681,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuHelpView.
+	 * è·å–menuHelpView.
 	 * @return
 	 *     menuHelpView.
 	 */
@@ -691,7 +691,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuHelpView.
+	 * è®¾ç½®menuHelpView.
 	 * @param
 	 *     menuHelpView.
 	 */
@@ -701,7 +701,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuHelpAboutNotepad.
+	 * è·å–menuHelpAboutNotepad.
 	 * @return
 	 *     menuHelpAboutNotepad.
 	 */
@@ -711,7 +711,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuHelpAboutNotepad.
+	 * è®¾ç½®menuHelpAboutNotepad.
 	 * @param
 	 *     menuHelpAboutNotepad.
 	 */
@@ -721,7 +721,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡menuViewStatusBar.
+	 * è·å–menuViewStatusBar.
 	 * @return
 	 *     menuViewStatusBar.
 	 */
@@ -731,7 +731,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmenuViewStatusBar.
+	 * è®¾ç½®menuViewStatusBar.
 	 * @param
 	 *     menuViewStatusBar.
 	 */
@@ -741,7 +741,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡fileName.
+	 * è·å–fileName.
 	 * @return
 	 *     fileName.
 	 */
@@ -751,7 +751,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃfileName.
+	 * è®¾ç½®fileName.
 	 * @param
 	 *     fileName.
 	 */
@@ -761,7 +761,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡undo.
+	 * è·å–undo.
 	 * @return
 	 *     undo.
 	 */
@@ -771,7 +771,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃundo.
+	 * è®¾ç½®undo.
 	 * @param
 	 *     undo.
 	 */
@@ -781,7 +781,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡textPane.
+	 * è·å–textPane.
 	 * @return
 	 *     textPane.
 	 */
@@ -791,7 +791,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃtextPane.
+	 * è®¾ç½®textPane.
 	 * @param
 	 *     textPane.
 	 */
@@ -801,7 +801,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡toolState.
+	 * è·å–toolState.
 	 * @return
 	 *     toolState.
 	 */
@@ -811,7 +811,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃtoolState.
+	 * è®¾ç½®toolState.
 	 * @param
 	 *     toolState.
 	 */
@@ -821,7 +821,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡findText.
+	 * è·å–findText.
 	 * @return
 	 *     findText.
 	 */
@@ -831,7 +831,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃfindText.
+	 * è®¾ç½®findText.
 	 * @param
 	 *     findText.
 	 */
@@ -841,7 +841,7 @@ public class DomainHelper
 	}
 	
 	/**
-	 * »ñÈ¡replaceText.
+	 * è·å–replaceText.
 	 * @return
 	 *     replaceText.
 	 */
@@ -851,7 +851,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃreplaceText.
+	 * è®¾ç½®replaceText.
 	 * @param
 	 *     replaceText.
 	 */
@@ -861,7 +861,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡matchCase.
+	 * è·å–matchCase.
 	 * @return
 	 *     matchCase.
 	 */
@@ -871,7 +871,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃmatchCase.
+	 * è®¾ç½®matchCase.
 	 * @param
 	 *     matchCase.
 	 */
@@ -881,7 +881,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡up.
+	 * è·å–up.
 	 * @return
 	 *     up.
 	 */
@@ -891,7 +891,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃup.
+	 * è®¾ç½®up.
 	 * @param
 	 *     up.
 	 */
@@ -901,7 +901,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * »ñÈ¡down.
+	 * è·å–down.
 	 * @return
 	 *     down.
 	 */
@@ -911,7 +911,7 @@ public class DomainHelper
 	}
 
 	/**
-	 * ÉèÖÃdown.
+	 * è®¾ç½®down.
 	 * @param
 	 *     down.
 	 */

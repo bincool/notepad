@@ -2,10 +2,10 @@
 * @FileName: MenuFile.java
 * @Package: xyz.wchy.menu
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: MenuFile.java: ÎÄ¼ş²Ù×÷²Ëµ¥.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: MenuFile.java: æ–‡ä»¶æ“ä½œèœå•.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.menu;
@@ -32,65 +32,65 @@ import xyz.wchy.menu.base.MenuBase;
 * 
 * @Description: 
 * <p>
-* ÎÄ¼ş²Ù×÷²Ëµ¥£ºĞÂ½¨¡¢´ò¿ª¡¢±£´æ¡¢Áí´æÎª¡¢Ò³ÃæÉèÖÃ¡¢´òÓ¡¡¢ÍË³ö.
+* æ–‡ä»¶æ“ä½œèœå•ï¼šæ–°å»ºã€æ‰“å¼€ã€ä¿å­˜ã€å¦å­˜ä¸ºã€é¡µé¢è®¾ç½®ã€æ‰“å°ã€é€€å‡º.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ15ÈÕ ÏÂÎç10:29:40.
+* @Date: 2018å¹´1æœˆ15æ—¥ ä¸‹åˆ10:29:40.
 * 
 */
 public class MenuFile extends MenuBase 
 {
 	
 	/**
-	 * Ò»¼¶²Ëµ¥£¬ÎÄ¼ş(F).
+	 * ä¸€çº§èœå•ï¼Œæ–‡ä»¶(F).
 	 */
 	private JMenu menu = new JMenu(NodePadConstant.MENU_TITLE_FILE);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬ĞÂ½¨(N).
+	 * äºŒçº§èœå•ï¼Œæ–°å»º(N).
 	 */
 	private JMenuItem menuFileNew = domain.getMenuFileNew();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬´ò¿ª(O).
+	 * äºŒçº§èœå•ï¼Œæ‰“å¼€(O).
 	 */
 	private JMenuItem menuFileOpen = domain.getMenuFileOpen();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬±£´æ(S).
+	 * äºŒçº§èœå•ï¼Œä¿å­˜(S).
 	 */
 	private JMenuItem menuFileSave = domain.getMenuFileSave();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬Áí´æÎª(A).
+	 * äºŒçº§èœå•ï¼Œå¦å­˜ä¸º(A).
 	 */
 	private JMenuItem menuFileSaveAs = domain.getMenuFileSaveAs();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬Ò³ÃæÉèÖÃ(U).
+	 * äºŒçº§èœå•ï¼Œé¡µé¢è®¾ç½®(U).
 	 */
 	private JMenuItem menuFilePageSet = domain.getMenuFilePageSet();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬´òÓ¡(P).
+	 * äºŒçº§èœå•ï¼Œæ‰“å°(P).
 	 */
 	private JMenuItem menuFilePagePrint = domain.getMenuFilePagePrint();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬ÍË³ö(X).
+	 * äºŒçº§èœå•ï¼Œé€€å‡º(X).
 	 */
 	private JMenuItem menuFileExit = domain.getMenuFileExit();
 	
 	/**
-	 * ¹¹Ôìº¯Êı£¬³õÊ¼»¯²Ëµ¥ĞÅÏ¢.
+	 * æ„é€ å‡½æ•°ï¼Œåˆå§‹åŒ–èœå•ä¿¡æ¯.
 	 */
 	public MenuFile() 
 	{
@@ -99,7 +99,7 @@ public class MenuFile extends MenuBase
 	}
 	
 	/**
-	 * »ñÈ¡menu.
+	 * è·å–menu.
 	 * @return
 	 *     menu.
 	 */

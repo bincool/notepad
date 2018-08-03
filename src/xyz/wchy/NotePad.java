@@ -2,10 +2,10 @@
 * @FileName: NotePad.java
 * @Package: xyz.wchy
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: NotePad.java: ¼ÇÊÂ±¾.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: NotePad.java: è®°äº‹æœ¬.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy;
@@ -30,35 +30,35 @@ import javax.swing.UIManager;
 * 
 * @Description: 
 * <p>
-* ¼ÇÊÂ±¾Æô¶¯.
+* è®°äº‹æœ¬å¯åŠ¨.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ15ÈÕ ÏÂÎç9:05:03.
+* @Date: 2018å¹´1æœˆ15æ—¥ ä¸‹åˆ9:05:03.
 * 
 */
 public class NotePad 
 {
 	
 	/**
-	 * ÁìÓò¶ÔÏó.
+	 * é¢†åŸŸå¯¹è±¡.
 	 */
 	private static final DomainHelper domain = DomainHelper.getInstance();
 
 	/**
-	 * ÈÕÖ¾¶ÔÏó.
+	 * æ—¥å¿—å¯¹è±¡.
 	 */
 	private static final Logger LOGGER = Logger.getLogger();
 	
 	/**
-	 * Ö÷´°Ìå.
+	 * ä¸»çª—ä½“.
 	 */
 	private JFrame frame;
 	
@@ -75,26 +75,26 @@ public class NotePad
 	 */
 	private void initialize() 
 	{
-		// ³õÊ¼»¯ÁìÓò¶ÔÏó.
+		// åˆå§‹åŒ–é¢†åŸŸå¯¹è±¡.
         domain.initDomain();
         
-		// ²Ëµ¥À¸£ºÎÄ¼ş²Ù×÷²Ëµ¥¡¢±à¼­²Ù×÷²Ëµ¥¡¢¸ñÊ½²Ù×÷²Ëµ¥¡¢²é¿´²Ù×÷²Ëµ¥¡¢°ïÖú²Ù×÷²Ëµ¥.
+		// èœå•æ ï¼šæ–‡ä»¶æ“ä½œèœå•ã€ç¼–è¾‘æ“ä½œèœå•ã€æ ¼å¼æ“ä½œèœå•ã€æŸ¥çœ‹æ“ä½œèœå•ã€å¸®åŠ©æ“ä½œèœå•.
 		MenuMain menuMain = new MenuMain();
 		
-		// »ñÈ¡´ø¹ö¶¯ÌõµÄÎÄ±¾Óò.
+		// è·å–å¸¦æ»šåŠ¨æ¡çš„æ–‡æœ¬åŸŸ.
 		TextPane textPane = domain.getTextPane();
 		JScrollPane scrollPane = textPane.getScrollPane();
 		
-		// ×´Ì¬À¸.
+		// çŠ¶æ€æ .
 		JToolBar toolState = domain.getToolState();
 		
-		// ÉèÖÃ×´Ì¬À¸.
+		// è®¾ç½®çŠ¶æ€æ .
 		toolState.setVisible(true);
         toolState.setFloatable(false);
         toolState.setPreferredSize(new Dimension(textPane.getTextArea().getSize().width, 20));
         DomainHelper.getInstance().setToolState(toolState);
         
-		// Ö÷´°Ìå.
+		// ä¸»çª—ä½“.
         frame = domain.getFrame();
 		frame.setIconImage(Toolkit.getDefaultToolkit().getImage("images\\icon.png"));
 		frame.setTitle("Notepad");
@@ -107,7 +107,7 @@ public class NotePad
 	}
 
 	/**
-	 * Ö÷·½·¨.
+	 * ä¸»æ–¹æ³•.
 	 * Launch the application.
 	 */
 	public static void main(String[] args) 
@@ -118,10 +118,10 @@ public class NotePad
 			{
 				try 
 				{
-					// ÉèÖÃ¶Ô»°¿òµÄ·ç¸ñ.
+					// è®¾ç½®å¯¹è¯æ¡†çš„é£æ ¼.
 					UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 					
-					// ´´½¨Ò»¸ö¼ÇÊÂ±¾¶ÔÏó.
+					// åˆ›å»ºä¸€ä¸ªè®°äº‹æœ¬å¯¹è±¡.
 					NotePad window = new NotePad();
 					window.frame.setVisible(true);
 				} 

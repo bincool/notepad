@@ -2,10 +2,10 @@
 * @FileName: BaseAction.java
 * @Package: xyz.wchy.action.base
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: BaseAction.java: »ùÀàµã»÷ÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: BaseAction.java: åŸºç±»ç‚¹å‡»äº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.base;
@@ -22,25 +22,25 @@ import xyz.wchy.bean.BaseData;
 * 
 * @Description: 
 * <p>
-* »ùÀàµã»÷ÊÂ¼ş£ºµã»÷ÌáÊ¾¸Ã"¹¦ÄÜÔİÎ´¿ª·Å£¬¾´ÇëÆÚ´ı".
+* åŸºç±»ç‚¹å‡»äº‹ä»¶ï¼šç‚¹å‡»æç¤ºè¯¥"åŠŸèƒ½æš‚æœªå¼€æ”¾ï¼Œæ•¬è¯·æœŸå¾…".
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
+* @Date: 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
 * 
 */
 public class BaseAction extends BaseData implements ActionListener 
 {
 	
 	/**
-	 * ÎŞ²Î¹¹Ôìº¯Êı.
+	 * æ— å‚æ„é€ å‡½æ•°.
 	 */
 	public BaseAction() 
 	{
@@ -53,8 +53,8 @@ public class BaseAction extends BaseData implements ActionListener
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		LOGGER.info(BaseAction.class, "¸Ã¹¦ÄÜÔİÎ´¿ª·Å£¬¾´ÇëÆÚ´ı...");
-		JOptionPane.showMessageDialog(domain.getFrame(), "¸Ã¹¦ÄÜÔİÎ´¿ª·Å£¬¾´ÇëÆÚ´ı...", "Notepad", JOptionPane.WARNING_MESSAGE);
+		LOGGER.info(BaseAction.class, "è¯¥åŠŸèƒ½æš‚æœªå¼€æ”¾ï¼Œæ•¬è¯·æœŸå¾…...");
+		JOptionPane.showMessageDialog(domain.getFrame(), "è¯¥åŠŸèƒ½æš‚æœªå¼€æ”¾ï¼Œæ•¬è¯·æœŸå¾…...", "Notepad", JOptionPane.WARNING_MESSAGE);
 	}
 
 }

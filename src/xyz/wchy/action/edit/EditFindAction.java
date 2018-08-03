@@ -2,10 +2,10 @@
 * @FileName: EditFindAction.java
 * @Package: xyz.wchy.action.edit
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: EditFindAction.java: ±à¼­²Ù×÷²Ëµ¥-²éÕÒÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: EditFindAction.java: ç¼–è¾‘æ“ä½œèœå•-æŸ¥æ‰¾äº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.edit;
@@ -20,18 +20,18 @@ import xyz.wchy.dialog.edit.EditFindDialog;
 * 
 * @Description: 
 * <p>
-* ±à¼­²Ù×÷²Ëµ¥-²éÕÒÊÂ¼ş.
+* ç¼–è¾‘æ“ä½œèœå•-æŸ¥æ‰¾äº‹ä»¶.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ21ÈÕ ÉÏÎç12:45:16.
+* @Date: 2018å¹´1æœˆ21æ—¥ ä¸Šåˆ12:45:16.
 * 
 */
 public class EditFindAction extends BaseAction 

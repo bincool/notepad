@@ -2,10 +2,10 @@
 * @FileName: FileHelper.java
 * @Package: xyz.wchy.utils
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: FileHelper.java: ÎÄ¼ş²Ù×÷¹¤¾ßÀà.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: FileHelper.java: æ–‡ä»¶æ“ä½œå·¥å…·ç±».
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.utils;
@@ -27,37 +27,37 @@ import xyz.wchy.constant.SystemConstant;
 * 
 * @Description: 
 * <p>
-* ÎÄ¼ş²Ù×÷¹¤¾ßÀà.
+* æ–‡ä»¶æ“ä½œå·¥å…·ç±».
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ21ÈÕ ÉÏÎç1:18:19.
+* @Date: 2018å¹´1æœˆ21æ—¥ ä¸Šåˆ1:18:19.
 * 
 */
 public class FileHelper 
 {
 	
 	/**
-	 * ÎÄ¼ş¶ÔÏó.
+	 * æ–‡ä»¶å¯¹è±¡.
 	 */
 	private static File file = null;
 	
 	/**
-	 * ´´½¨ÎÄ¼şÂ·¾¶.
+	 * åˆ›å»ºæ–‡ä»¶è·¯å¾„.
 	 * @param filePath
 	 */
 	public static void createFilePath(String filePath) 
 	{
 		file = new File(filePath);
 		
-		// Èç¹ûÎÄ¼ş¼Ğ²»´æÔÚÔò´´½¨.
+		// å¦‚æœæ–‡ä»¶å¤¹ä¸å­˜åœ¨åˆ™åˆ›å»º.
 		if  (!file.exists()  && !file.isDirectory())
 		{
 		    file.mkdir();
@@ -65,7 +65,7 @@ public class FileHelper
 	}
 	
 	/**
-	 * ´´½¨ÎÄ¼ş.
+	 * åˆ›å»ºæ–‡ä»¶.
 	 * @param fileName
 	 */
 	public static void createFile(String fileName) 
@@ -85,7 +85,7 @@ public class FileHelper
 	}
 	
 	/**
-	 * ´´½¨ÎÄ¼ş.
+	 * åˆ›å»ºæ–‡ä»¶.
 	 * @param filePath
 	 * @param fileName
 	 */
@@ -106,7 +106,7 @@ public class FileHelper
 	}
 	
 	/**
-	 * ÏòÎÄ¼şÖĞĞ´ÄÚÈİ.
+	 * å‘æ–‡ä»¶ä¸­å†™å†…å®¹.
 	 * @param fileName
 	 * @param content
 	 */
@@ -132,7 +132,7 @@ public class FileHelper
 	}
 	
 	/**
-	 * ¶ÁÈ¡ÎÄ¼şÄÚÈİ.
+	 * è¯»å–æ–‡ä»¶å†…å®¹.
 	 * @param fileName
 	 * @return
 	 */
@@ -148,17 +148,17 @@ public class FileHelper
 			isr = new InputStreamReader(fis, getFileEncode(fileName));
 			br=new BufferedReader(isr);
 			
-			// ´ÓÎÄ¼şÖĞÑ­»·¶ÁÈ¡£¬²¢ÏÔÊ¾µ½ÎÄ±¾ÓòÖĞ
+			// ä»æ–‡ä»¶ä¸­å¾ªç¯è¯»å–ï¼Œå¹¶æ˜¾ç¤ºåˆ°æ–‡æœ¬åŸŸä¸­
 			String temp = "";
 			StringBuffer buffer = new StringBuffer();
 			while(null != (temp = br.readLine()))
 			{
-				// ÏÔÊ¾µ½ÎÄ±¾ÓòÖĞ.
+				// æ˜¾ç¤ºåˆ°æ–‡æœ¬åŸŸä¸­.
 				buffer.append(temp);
 				buffer.append(SystemConstant.LINE_SEPARATOR_WINDOWS);
 			}
 			
-			// ·ÅÖÃµ½ÎÄ±¾ÓòÖĞ.
+			// æ”¾ç½®åˆ°æ–‡æœ¬åŸŸä¸­.
 			if (StringUtils.isNotEmpty(buffer.toString())) 
 			{
 				return buffer.substring(0, buffer.lastIndexOf(SystemConstant.LINE_SEPARATOR_WINDOWS));
@@ -186,7 +186,7 @@ public class FileHelper
     }
 	
 	/**
-	 * »ñÈ¡ÎÄ¼ş±àÂë.
+	 * è·å–æ–‡ä»¶ç¼–ç .
 	 * @param fileName
 	 * @return
 	 */

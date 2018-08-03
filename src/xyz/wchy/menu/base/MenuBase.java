@@ -2,10 +2,10 @@
 * @FileName: MenuBase.java
 * @Package: xyz.wchy.menu.base
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: MenuBase.java: ²Ëµ¥»ùÀà.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: MenuBase.java: èœå•åŸºç±».
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.menu.base;
@@ -17,35 +17,35 @@ import xyz.wchy.utils.DomainHelper;
 * 
 * @Description: 
 * <p>
-* ²Ëµ¥»ùÀà£º¼ÇÊÂ±¾²Ëµ¥·ÖÎªÒ»¼¶²Ëµ¥ºÍ¶ş¼¶µã»÷ÊÂ¼ş²Ëµ¥.
+* èœå•åŸºç±»ï¼šè®°äº‹æœ¬èœå•åˆ†ä¸ºä¸€çº§èœå•å’ŒäºŒçº§ç‚¹å‡»äº‹ä»¶èœå•.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ19ÈÕ ÏÂÎç2:25:42.
+* @Date: 2018å¹´1æœˆ19æ—¥ ä¸‹åˆ2:25:42.
 * 
 */
 public abstract class MenuBase 
 {
 	
 	/**
-	 * ÁìÓò¶ÔÏó.
+	 * é¢†åŸŸå¯¹è±¡.
 	 */
 	protected static final DomainHelper domain = DomainHelper.getInstance();
 	
 	/**
-	 * ³õÊ¼»¯²Ëµ¥.
+	 * åˆå§‹åŒ–èœå•.
 	 */
 	protected abstract void initMenu();
 	
 	/**
-	 * ¸ø²Ëµ¥°ó¶¨ÊÂ¼ş.
+	 * ç»™èœå•ç»‘å®šäº‹ä»¶.
 	 */
 	protected abstract void bindActionListener();
 	

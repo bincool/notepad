@@ -2,10 +2,10 @@
 * @FileName: EditDateAction.java
 * @Package: xyz.wchy.action.edit
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: EditDateAction.java: ±à¼­²Ù×÷²Ëµ¥-Ê±¼ä/ÈÕÆÚÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: EditDateAction.java: ç¼–è¾‘æ“ä½œèœå•-æ—¶é—´/æ—¥æœŸäº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.edit;
@@ -23,18 +23,18 @@ import xyz.wchy.utils.DomainHelper;
 * 
 * @Description: 
 * <p>
-* ±à¼­²Ù×÷²Ëµ¥-Ê±¼ä/ÈÕÆÚÊÂ¼ş.
+* ç¼–è¾‘æ“ä½œèœå•-æ—¶é—´/æ—¥æœŸäº‹ä»¶.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ21ÈÕ ÉÏÎç12:47:45.
+* @Date: 2018å¹´1æœˆ21æ—¥ ä¸Šåˆ12:47:45.
 * 
 */
 public class EditDateAction extends BaseAction 
@@ -46,18 +46,18 @@ public class EditDateAction extends BaseAction
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		// »ñÈ¡ÎÄ±¾Óò.
+		// è·å–æ–‡æœ¬åŸŸ.
 		JTextArea jTextArea = DomainHelper.getInstance().getTextPane().getTextArea();
 		
-		// »ñÈ¡µ±Ç°±à¼­¿òÖĞ¹â±êµÄÎ»ÖÃ.
+		// è·å–å½“å‰ç¼–è¾‘æ¡†ä¸­å…‰æ ‡çš„ä½ç½®.
 		int index = jTextArea.getCaretPosition();
 		
-		// ÉèÖÃÈÕÆÚ¸ñÊ½.
+		// è®¾ç½®æ—¥æœŸæ ¼å¼.
         String localTime = DateUtils.getTime();
         
         String newString = jTextArea.getText().substring(0, index) + localTime + jTextArea.getText().substring(index, jTextArea.getText().length());
         
-        // ½«Æ´½ÓºÃµÄ×Ö·û´®ÏÔÊ¾³öÀ´.
+        // å°†æ‹¼æ¥å¥½çš„å­—ç¬¦ä¸²æ˜¾ç¤ºå‡ºæ¥.
         jTextArea.setText("");
         jTextArea.append(newString);
 	}

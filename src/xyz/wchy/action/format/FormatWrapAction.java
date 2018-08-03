@@ -2,10 +2,10 @@
 * @FileName: FormatWrapAction.java
 * @Package: xyz.wchy.action.format
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: FormatWrapAction.java: ¸ñÊ½²Ù×÷²Ëµ¥-×Ô¶¯»»ĞĞÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: FormatWrapAction.java: æ ¼å¼æ“ä½œèœå•-è‡ªåŠ¨æ¢è¡Œäº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.format;
@@ -19,18 +19,18 @@ import xyz.wchy.action.base.BaseAction;
 * 
 * @Description: 
 * <p>
-* ¸ñÊ½²Ù×÷²Ëµ¥-×Ô¶¯»»ĞĞÊÂ¼ş.
+* æ ¼å¼æ“ä½œèœå•-è‡ªåŠ¨æ¢è¡Œäº‹ä»¶.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ21ÈÕ ÉÏÎç12:52:36.
+* @Date: 2018å¹´1æœˆ21æ—¥ ä¸Šåˆ12:52:36.
 * 
 */
 public class FormatWrapAction extends BaseAction 

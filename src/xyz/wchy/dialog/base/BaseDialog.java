@@ -2,10 +2,10 @@
 * @FileName: BaseDialog.java
 * @Package: xyz.wchy.dialog.base
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: BaseDialog.java: »ùÀà¶Ô»°¿ò.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: BaseDialog.java: åŸºç±»å¯¹è¯æ¡†.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.dialog.base;
@@ -22,40 +22,40 @@ import xyz.wchy.utils.Logger;
 * 
 * @Description: 
 * <p>
-* »ùÀà¶Ô»°¿ò.
+* åŸºç±»å¯¹è¯æ¡†.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ25ÈÕ ÏÂÎç4:58:48.
+* @Date: 2018å¹´1æœˆ25æ—¥ ä¸‹åˆ4:58:48.
 * 
 */
 public abstract class BaseDialog extends JDialog 
 {
 
 	/**
-	 * ĞòÁĞ°æ±¾ºÅ.
+	 * åºåˆ—ç‰ˆæœ¬å·.
 	 */
 	private static final long serialVersionUID = 1L;
 	
 	/**
-	 * ÁìÓò¶ÔÏó.
+	 * é¢†åŸŸå¯¹è±¡.
 	 */
 	protected static final DomainHelper domain = DomainHelper.getInstance();
 	
 	/**
-	 * ÈÕÖ¾¶ÔÏó.
+	 * æ—¥å¿—å¯¹è±¡.
 	 */
 	protected static final Logger LOGGER = Logger.getLogger();
 	
 	/**
-	 * ÓĞ²ÎÊı¹¹Ôìº¯Êı.
+	 * æœ‰å‚æ•°æ„é€ å‡½æ•°.
 	 * @param owner
 	 */
 	public BaseDialog(Frame owner) 
@@ -64,7 +64,7 @@ public abstract class BaseDialog extends JDialog
 	}
 	
 	/**
-	 * ³õÊ¼»¯¶Ô»°¿ò.
+	 * åˆå§‹åŒ–å¯¹è¯æ¡†.
 	 */
 	protected abstract void initDialog();
 	

@@ -2,10 +2,10 @@
 * @FileName: MenuEdit.java
 * @Package: xyz.wchy.menu
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: MenuEdit.java: ±à¼­²Ù×÷²Ëµ¥.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: MenuEdit.java: ç¼–è¾‘æ“ä½œèœå•.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.menu;
@@ -36,85 +36,85 @@ import xyz.wchy.menu.base.MenuBase;
 * 
 * @Description: 
 * <p>
-* ±à¼­²Ù×÷²Ëµ¥£º±à¼­(E)¡¢³·Ïú(U)¡¢¼ôÇĞ(T)¡¢¸´ÖÆ(C)¡¢Õ³Ìù(P)¡¢É¾³ı(L)¡¢²éÕÒ(F)¡¢²éÕÒÏÂÒ»¸ö(N)¡¢Ìæ»»(R)¡¢×ªµ½(G)¡¢È«Ñ¡(A)¡¢Ê±¼ä/ÈÕÆÚ(D).
+* ç¼–è¾‘æ“ä½œèœå•ï¼šç¼–è¾‘(E)ã€æ’¤é”€(U)ã€å‰ªåˆ‡(T)ã€å¤åˆ¶(C)ã€ç²˜è´´(P)ã€åˆ é™¤(L)ã€æŸ¥æ‰¾(F)ã€æŸ¥æ‰¾ä¸‹ä¸€ä¸ª(N)ã€æ›¿æ¢(R)ã€è½¬åˆ°(G)ã€å…¨é€‰(A)ã€æ—¶é—´/æ—¥æœŸ(D).
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ15ÈÕ ÏÂÎç11:28:47.
+* @Date: 2018å¹´1æœˆ15æ—¥ ä¸‹åˆ11:28:47.
 * 
 */
 public class MenuEdit extends MenuBase
 {
 	
 	/**
-	 * Ò»¼¶²Ëµ¥£¬±à¼­(E).
+	 * ä¸€çº§èœå•ï¼Œç¼–è¾‘(E).
 	 */
 	private JMenu menu = new JMenu(NodePadConstant.MENU_TITLE_EDIT);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬³·Ïú(U).
+	 * äºŒçº§èœå•ï¼Œæ’¤é”€(U).
 	 */
 	private JMenuItem menuEditUndo = domain.getMenuEditUndo();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬¼ôÇĞ(T).
+	 * äºŒçº§èœå•ï¼Œå‰ªåˆ‡(T).
 	 */
 	private JMenuItem menuEditTrim = domain.getMenuEditTrim();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬¸´ÖÆ(C).
+	 * äºŒçº§èœå•ï¼Œå¤åˆ¶(C).
 	 */
 	private JMenuItem menuEditCopy = domain.getMenuEditCopy();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬Õ³Ìù(P).
+	 * äºŒçº§èœå•ï¼Œç²˜è´´(P).
 	 */
 	private JMenuItem menuEditPaste = domain.getMenuEditPaste();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬É¾³ı(L).
+	 * äºŒçº§èœå•ï¼Œåˆ é™¤(L).
 	 */
 	private JMenuItem menuEditDelete = domain.getMenuEditDelete();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬²éÕÒ(F).
+	 * äºŒçº§èœå•ï¼ŒæŸ¥æ‰¾(F).
 	 */
 	private JMenuItem menuEditFind = domain.getMenuEditFind();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬²éÕÒÏÂÒ»¸ö(N).
+	 * äºŒçº§èœå•ï¼ŒæŸ¥æ‰¾ä¸‹ä¸€ä¸ª(N).
 	 */
 	private JMenuItem menuEditFindNext = domain.getMenuEditFindNext();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬Ìæ»»(R).
+	 * äºŒçº§èœå•ï¼Œæ›¿æ¢(R).
 	 */
 	private JMenuItem menuEditReplace = domain.getMenuEditReplace();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬×ªµ½(G).
+	 * äºŒçº§èœå•ï¼Œè½¬åˆ°(G).
 	 */
 	private JMenuItem menuEditGoto = domain.getMenuEditGoto();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬È«Ñ¡(A).
+	 * äºŒçº§èœå•ï¼Œå…¨é€‰(A).
 	 */
 	private JMenuItem menuEditAll = domain.getMenuEditAll();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬Ê±¼ä/ÈÕÆÚ(D).
+	 * äºŒçº§èœå•ï¼Œæ—¶é—´/æ—¥æœŸ(D).
 	 */
 	private JMenuItem menuEditDate = domain.getMenuEditDate();
 	
 	/**
-	 * ¹¹Ôìº¯Êı.
+	 * æ„é€ å‡½æ•°.
 	 */
 	public MenuEdit() 
 	{
@@ -123,7 +123,7 @@ public class MenuEdit extends MenuBase
 	}
 
 	/**
-	 * »ñÈ¡menuEdit.
+	 * è·å–menuEdit.
 	 * @return
 	 *     menuEdit.
 	 */

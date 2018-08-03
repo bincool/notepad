@@ -2,10 +2,10 @@
 * @FileName: Logger.java
 * @Package: xyz.wchy.utils
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: Logger.java: ¼òÒ×ÈÕÖ¾Àà.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: Logger.java: ç®€æ˜“æ—¥å¿—ç±».
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.utils;
@@ -20,30 +20,30 @@ import xyz.wchy.constant.SystemConstant;
 * 
 * @Description: 
 * <p>
-* ¼òÒ×ÈÕÖ¾Àà.
+* ç®€æ˜“æ—¥å¿—ç±».
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ21ÈÕ ÉÏÎç1:03:58.
+* @Date: 2018å¹´1æœˆ21æ—¥ ä¸Šåˆ1:03:58.
 * 
 */
 public class Logger 
 {
 	
 	/**
-	 * ÈÕÖ¾¶ÔÏó.
+	 * æ—¥å¿—å¯¹è±¡.
 	 */
 	private static final Logger LOGGER = new Logger();
 	
 	/**
-	 * Ë½ÓĞ¹¹Ôìº¯Êı.
+	 * ç§æœ‰æ„é€ å‡½æ•°.
 	 */
 	private Logger() 
 	{
@@ -71,7 +71,7 @@ public class Logger
 	}
 	
 	/**
-	 * »ñÈ¡ÈÕÖ¾¶ÔÏó.
+	 * è·å–æ—¥å¿—å¯¹è±¡.
 	 * @param classT
 	 * @return
 	 */
@@ -81,35 +81,35 @@ public class Logger
 	}
 	
 	/**
-	 * ¼ÇÂ¼ÈÕÖ¾.
+	 * è®°å½•æ—¥å¿—.
 	 * @param info
 	 */
 	public void info(Class<?> className, Object info) 
 	{
 		StringBuffer sb = new StringBuffer();
-		sb.append("¡¾");
+		sb.append("ã€");
 		sb.append(DateUtils.getTime());
-		sb.append("¡¿");
-		sb.append("¡¾info¡¿¡¾");
+		sb.append("ã€‘");
+		sb.append("ã€infoã€‘ã€");
 		sb.append(className);
-		sb.append('¡¿');
+		sb.append('ã€‘');
 		sb.append(info);
 		System.out.println(sb);
 	}
 	
 	/**
-	 * ¼ÇÂ¼´íÎóÈÕÖ¾.
+	 * è®°å½•é”™è¯¯æ—¥å¿—.
 	 * @param info
 	 */
 	public void error(Class<?> className, Object info) 
 	{
 		StringBuffer sb = new StringBuffer();
-		sb.append("¡¾");
+		sb.append("ã€");
 		sb.append(DateUtils.getTime());
-		sb.append("¡¿");
-		sb.append("¡¾error¡¿¡¾");
+		sb.append("ã€‘");
+		sb.append("ã€errorã€‘ã€");
 		sb.append(className);
-		sb.append('¡¿');
+		sb.append('ã€‘');
 		sb.append(info);
 		System.err.println(sb);
 	}

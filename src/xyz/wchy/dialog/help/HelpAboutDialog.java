@@ -2,10 +2,10 @@
 * @FileName: HelpAboutDialog.java
 * @Package: xyz.wchy.dialog.help
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: HelpAboutDialog.java: °ïÖú²Ù×÷²Ëµ¥-¹ØÓÚ¼ÇÊÂ±¾¶Ô»°¿ò.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: HelpAboutDialog.java: å¸®åŠ©æ“ä½œèœå•-å…³äºè®°äº‹æœ¬å¯¹è¯æ¡†.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.dialog.help;
@@ -28,75 +28,75 @@ import xyz.wchy.dialog.base.BaseDialog;
 * 
 * @Description: 
 * <p>
-* °ïÖú²Ù×÷²Ëµ¥-¹ØÓÚ¼ÇÊÂ±¾¶Ô»°¿ò.
+* å¸®åŠ©æ“ä½œèœå•-å…³äºè®°äº‹æœ¬å¯¹è¯æ¡†.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ24ÈÕ ÏÂÎç5:02:51.
+* @Date: 2018å¹´1æœˆ24æ—¥ ä¸‹åˆ5:02:51.
 * 
 */
 public class HelpAboutDialog extends BaseDialog
 {
 	
 	/**
-	 * ĞòÁĞ°æ±¾ºÅ.
+	 * åºåˆ—ç‰ˆæœ¬å·.
 	 */
 	private static final long serialVersionUID = 1L;
 	
 	/**
-	 * ¹ØÓÚ¼ÇÊÂ±¾¶Ô»°¿òµ¥ÀıÀà.
+	 * å…³äºè®°äº‹æœ¬å¯¹è¯æ¡†å•ä¾‹ç±».
 	 */
 	private static HelpAboutDialog instance = null;
 	
 	/**
-	 * ÈİÆ÷panel.
+	 * å®¹å™¨panel.
 	 */
 	private static final JPanel panel = new JPanel();
 	
 	/**
-	 * ¹ØÓÚÎÄ±¾ÄÚÈİ.
+	 * å…³äºæ–‡æœ¬å†…å®¹.
 	 */
-	private static final String about = "<html><body>NotePad<br>Version£º1.0<br>QQ£º891946049<br><body></html>";
+	private static final String about = "<html><body>NotePad<br>Versionï¼š1.0<br>QQï¼š891946049<br><body></html>";
 	
 	/**
-	 * ¹ØÓÚlabel.
+	 * å…³äºlabel.
 	 */
 	private static final JLabel label = new JLabel(about, JLabel.CENTER);
 	
 	/**
-	 * ×ÖÌå.
+	 * å­—ä½“.
 	 */
 	private static final Font font = new Font(Font.DIALOG, Font.PLAIN, 16);
 	
 	/**
-	 * È·¶¨°´Å¥.
+	 * ç¡®å®šæŒ‰é’®.
 	 */
-	private static final JButton button = new JButton("È·¶¨");
+	private static final JButton button = new JButton("ç¡®å®š");
 	
 	/**
-	 * ÆÁÄ»´óĞ¡.
+	 * å±å¹•å¤§å°.
 	 */
 	private static final Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
 	
 	/**
-	 * ¶Ô»°¿ò¿í.
+	 * å¯¹è¯æ¡†å®½.
 	 */
 	private static final int width = (int) dimension.getWidth();
 	
 	/**
-	 * ¶Ô»°¿ò¸ß.
+	 * å¯¹è¯æ¡†é«˜.
 	 */
 	private static final int hight = (int) dimension.getHeight();
 	
 	/**
-	 * ÓĞ²Î¹¹Ôìº¯Êı.
+	 * æœ‰å‚æ„é€ å‡½æ•°.
 	 * @param owner
 	 */
 	private HelpAboutDialog(Frame owner) 
@@ -105,7 +105,7 @@ public class HelpAboutDialog extends BaseDialog
 	}
 	
 	/**
-	 * »ñÈ¡¹ØÓÚ¼ÇÊÂ±¾¶Ô»°¿òµ¥Àı¶ÔÏó.
+	 * è·å–å…³äºè®°äº‹æœ¬å¯¹è¯æ¡†å•ä¾‹å¯¹è±¡.
 	 * @param owner
 	 * @return
 	 */
@@ -124,7 +124,7 @@ public class HelpAboutDialog extends BaseDialog
 	}
 	
 	/**
-     * ³õÊ¼»¯¶Ô»°¿òÒ³Ãæ.
+     * åˆå§‹åŒ–å¯¹è¯æ¡†é¡µé¢.
      */
 	@Override
 	public void initDialog() 

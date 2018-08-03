@@ -2,10 +2,10 @@
 * @FileName: FindAction.java
 * @Package: xyz.wchy.action.dialog
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: FindAction.java: ²éÕÒ¹¦ÄÜ.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç11:50:46.
-* @Content: ĞÂÔö.
+* @Description: FindAction.java: æŸ¥æ‰¾åŠŸèƒ½.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ11:50:46.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.dialog;
@@ -24,45 +24,45 @@ import xyz.wchy.action.base.BaseAction;
 * 
 * @Description: 
 * <p>
-* ²éÕÒ¹¦ÄÜ-²éÕÒÑ¡ÖĞºó½«Ç°ÇĞ¡¢¸´ÖÆ¡¢É¾³ı°´Å¥·Å¿ª¡¢.
+* æŸ¥æ‰¾åŠŸèƒ½-æŸ¥æ‰¾é€‰ä¸­åå°†å‰åˆ‡ã€å¤åˆ¶ã€åˆ é™¤æŒ‰é’®æ”¾å¼€ã€.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ29ÈÕ ÉÏÎç11:50:46.
+* @Date: 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ11:50:46.
 * 
 */
 public class FindAction extends BaseAction 
 {
 	
 	/**
-	 * ²éÕÒactionµ¥ÀıÀà.
+	 * æŸ¥æ‰¾actionå•ä¾‹ç±».
 	 */
 	private static FindAction instance = null;
 	
 	/**
-	 * ÎÄ±¾Óò.
+	 * æ–‡æœ¬åŸŸ.
 	 */
 	private static final JTextArea textArea = domain.getTextPane().getTextArea();
 
 	/**
-	 * ²éÕÒ±à¼­¿ò.
+	 * æŸ¥æ‰¾ç¼–è¾‘æ¡†.
 	 */
 	private static final JTextField findText = domain.getFindText();
 
 	/**
-	 * ´óĞ¡Ğ´Ñ¡Ôñ¿ò.
+	 * å¤§å°å†™é€‰æ‹©æ¡†.
 	 */
 	private static final JCheckBox matchCase = domain.getMatchCase();
 
 	/**
-	 * ÏòÉÏ²éÕÒ.
+	 * å‘ä¸ŠæŸ¥æ‰¾.
 	 */
 	private static final JRadioButton up = domain.getUp();
 	
@@ -71,7 +71,7 @@ public class FindAction extends BaseAction
 	}
 	
 	/**
-	 * »ñÈ¡¹ØÓÚ¼ÇÊÂ±¾¶Ô»°¿òµ¥Àı¶ÔÏó.
+	 * è·å–å…³äºè®°äº‹æœ¬å¯¹è¯æ¡†å•ä¾‹å¯¹è±¡.
 	 * @param owner
 	 * @return
 	 */
@@ -98,7 +98,7 @@ public class FindAction extends BaseAction
 		String textStr = textArea.getText().toLowerCase();
 		String findStr = findText.getText().toLowerCase();
 
-		// "Çø·Ö´óĞ¡Ğ´"µÄCheckBox±»Ñ¡ÖĞ.
+		// "åŒºåˆ†å¤§å°å†™"çš„CheckBoxè¢«é€‰ä¸­.
 		if (matchCase.isSelected()) 
 		{
 			textStr = textArea.getText();
@@ -122,7 +122,7 @@ public class FindAction extends BaseAction
 		} 
 		else 
 		{
-			JOptionPane.showMessageDialog(domain.getFrame(), "ÕÒ²»µ½\"" + findStr + "\"", "¼ÇÊÂ±¾", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(domain.getFrame(), "æ‰¾ä¸åˆ°\"" + findStr + "\"", "è®°äº‹æœ¬", JOptionPane.INFORMATION_MESSAGE);
 		}
 		
 	}

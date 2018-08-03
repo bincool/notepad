@@ -2,10 +2,10 @@
 * @FileName: DateUtils.java
 * @Package: xyz.wchy.utils
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: DateUtils.java: ÈÕÆÚ¹¤¾ßÀà.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: DateUtils.java: æ—¥æœŸå·¥å…·ç±».
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.utils;
@@ -19,35 +19,35 @@ import java.util.Date;
 * 
 * @Description: 
 * <p>
-* ÈÕÆÚ¹¤¾ßÀà.
+* æ—¥æœŸå·¥å…·ç±».
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ21ÈÕ ÉÏÎç5:22:44.
+* @Date: 2018å¹´1æœˆ21æ—¥ ä¸Šåˆ5:22:44.
 * 
 */
 public class DateUtils 
 {
 	
 	/**
-	 * yyyyMMdd¸ñÊ½.
+	 * yyyyMMddæ ¼å¼.
 	 */
 	private final static DateFormat SDF_DAY_NUMBER = new SimpleDateFormat("yyyyMMdd");
 
 	/**
-	 * yyyy-MM-dd HH:mm:ss¸ñÊ½.
+	 * yyyy-MM-dd HH:mm:ssæ ¼å¼.
 	 */
 	private final static DateFormat SDF_TIME = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 	/**
-	 * »ñÈ¡YYYYMMDD¸ñÊ½.
+	 * è·å–YYYYMMDDæ ¼å¼.
 	 * @return
 	 */
 	public static String getDays()
@@ -56,7 +56,7 @@ public class DateUtils
 	}
 
 	/**
-	 * »ñÈ¡YYYY-MM-DD HH:mm:ss¸ñÊ½.
+	 * è·å–YYYY-MM-DD HH:mm:ssæ ¼å¼.
 	 *
 	 * @return
 	 */

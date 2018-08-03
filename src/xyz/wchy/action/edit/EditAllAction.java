@@ -2,10 +2,10 @@
 * @FileName: EditAllAction.java
 * @Package: xyz.wchy.action.edit
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: EditAllAction.java: ±à¼­²Ù×÷²Ëµ¥-È«Ñ¡ÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: EditAllAction.java: ç¼–è¾‘æ“ä½œèœå•-å…¨é€‰äº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.edit;
@@ -23,18 +23,18 @@ import xyz.wchy.utils.StringUtils;
 * 
 * @Description: 
 * <p>
-* ±à¼­²Ù×÷²Ëµ¥-È«Ñ¡ÊÂ¼ş.
+* ç¼–è¾‘æ“ä½œèœå•-å…¨é€‰äº‹ä»¶.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ21ÈÕ ÉÏÎç12:47:13.
+* @Date: 2018å¹´1æœˆ21æ—¥ ä¸Šåˆ12:47:13.
 * 
 */
 public class EditAllAction extends BaseAction 
@@ -46,13 +46,13 @@ public class EditAllAction extends BaseAction
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		// »ñÈ¡ÎÄ±¾Óò.
+		// è·å–æ–‡æœ¬åŸŸ.
 		JTextArea jTextArea = DomainHelper.getInstance().getTextPane().getTextArea();
 		
-		// Ö±½Óµ÷ÓÃ×Ô´øµÄº¯Êı.
+		// ç›´æ¥è°ƒç”¨è‡ªå¸¦çš„å‡½æ•°.
 		jTextArea.selectAll();
 		
-		// ÈôÄÚÈİ²»Îª¿Õ£¬ËµÃ÷È«Ñ¡ÓĞÄÚÈİ£¬Òò´ËĞèÒª½«"É¾³ı" "¼ôÇĞ" "¸´ÖÆ"ÕâÈı¸ö°´Å¥ÉèÖÃ³É¿ÉÑ¡.
+		// è‹¥å†…å®¹ä¸ä¸ºç©ºï¼Œè¯´æ˜å…¨é€‰æœ‰å†…å®¹ï¼Œå› æ­¤éœ€è¦å°†"åˆ é™¤" "å‰ªåˆ‡" "å¤åˆ¶"è¿™ä¸‰ä¸ªæŒ‰é’®è®¾ç½®æˆå¯é€‰.
         if(StringUtils.isNotEmpty(jTextArea.getText())) 
         {
         	DomainHelper.getInstance().getMenuEditTrim().setEnabled(true);

@@ -2,10 +2,10 @@
 * @FileName: FileSaveAction.java
 * @Package: xyz.wchy.action.file
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: FileSaveAction.java: ÎÄ¼ş²Ù×÷²Ëµ¥-±£´æÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: FileSaveAction.java: æ–‡ä»¶æ“ä½œèœå•-ä¿å­˜äº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.file;
@@ -22,18 +22,18 @@ import xyz.wchy.utils.StringUtils;
 * 
 * @Description: 
 * <p>
-* ÎÄ¼ş²Ù×÷²Ëµ¥-±£´æÊÂ¼ş£º±£´æÎÄ±¾ÓòÄÚÈİµ½ÎÄ¼ş.
+* æ–‡ä»¶æ“ä½œèœå•-ä¿å­˜äº‹ä»¶ï¼šä¿å­˜æ–‡æœ¬åŸŸå†…å®¹åˆ°æ–‡ä»¶.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ16ÈÕ ÏÂÎç1:16:53.
+* @Date: 2018å¹´1æœˆ16æ—¥ ä¸‹åˆ1:16:53.
 * 
 */
 public class FileSaveAction extends BaseAction 

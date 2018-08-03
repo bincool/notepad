@@ -2,10 +2,10 @@
 * @FileName: EditReplaceDialog.java
 * @Package: xyz.wchy.dialog.edit
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: EditReplaceDialog.java: ±à¼­Ìæ»»¶Ô»°¿ò.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: EditReplaceDialog.java: ç¼–è¾‘æ›¿æ¢å¯¹è¯æ¡†.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.dialog.edit;
@@ -38,134 +38,134 @@ import xyz.wchy.utils.DomainHelper;
 * 
 * @Description: 
 * <p>
-* ±à¼­Ìæ»»¶Ô»°¿ò.
+* ç¼–è¾‘æ›¿æ¢å¯¹è¯æ¡†.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ25ÈÕ ÏÂÎç4:56:43.
+* @Date: 2018å¹´1æœˆ25æ—¥ ä¸‹åˆ4:56:43.
 * 
 */
 public class EditReplaceDialog extends BaseDialog 
 {
 	/**
-	 * ĞòÁĞ°æ±¾ºÅ.
+	 * åºåˆ—ç‰ˆæœ¬å·.
 	 */
 	private static final long serialVersionUID = 1L;
 	
 	/**
-	 * ²éÕÒ¶Ô»°¿òµ¥ÀıÀà.
+	 * æŸ¥æ‰¾å¯¹è¯æ¡†å•ä¾‹ç±».
 	 */
 	private static EditReplaceDialog instance = null;
 	
 	/**
-	 * ²éÕÒÄÚÈİ(N).
+	 * æŸ¥æ‰¾å†…å®¹(N).
 	 */
-	private static final JLabel searchContentLabel = new JLabel("²éÕÒÄÚÈİ(N) :");  
+	private static final JLabel searchContentLabel = new JLabel("æŸ¥æ‰¾å†…å®¹(N) :");  
 	
 	/**
-	 * Ìæ»»Îª(P).
+	 * æ›¿æ¢ä¸º(P).
 	 */
-	private static final JLabel replaceContentLabel = new JLabel("Ìæ»»Îª(P)¡¡ :");  
+	private static final JLabel replaceContentLabel = new JLabel("æ›¿æ¢ä¸º(P)ã€€ :");  
 	
 	/**
-	 * ²éÕÒÏÂÒ»¸ö(F).
+	 * æŸ¥æ‰¾ä¸‹ä¸€ä¸ª(F).
 	 */
-	private static final JButton searchNext = new JButton("²éÕÒÏÂÒ»¸ö(F)");  
+	private static final JButton searchNext = new JButton("æŸ¥æ‰¾ä¸‹ä¸€ä¸ª(F)");  
 	
 	/**
-	 * Ìæ»»(R).
+	 * æ›¿æ¢(R).
 	 */
-	private static final JButton replace = new JButton("Ìæ»»(R)");  
+	private static final JButton replace = new JButton("æ›¿æ¢(R)");  
 	
 	/**
-	 * È«²¿Ìæ»»(A).
+	 * å…¨éƒ¨æ›¿æ¢(A).
 	 */
-	private static final JButton replaceAll = new JButton("È«²¿Ìæ»»(A)");
+	private static final JButton replaceAll = new JButton("å…¨éƒ¨æ›¿æ¢(A)");
 	
 	/**
-	 * È¡Ïû.
+	 * å–æ¶ˆ.
 	 */
-	private static final JButton cancel = new JButton("È¡Ïû"); 
+	private static final JButton cancel = new JButton("å–æ¶ˆ"); 
     
 	/**
-	 * µ×²¿panel.
+	 * åº•éƒ¨panel.
 	 */ 
 	private static final JPanel bottomPanel = new JPanel();  
 	
 	/**
-	 * ÖĞ²¿panel.
+	 * ä¸­éƒ¨panel.
 	 */
 	private static final JPanel centerPanel = new JPanel();  
 	
 	/**
-	 * ¶¥²¿panel.
+	 * é¡¶éƒ¨panel.
 	 */
 	private static final JPanel topPanel = new JPanel();  
 
 	/**
-	 * µ¥Ñ¡Ñ¡Ôñ×é.
+	 * å•é€‰é€‰æ‹©ç»„.
 	 */
 	private static final JPanel direction = new JPanel(); 
 	
 	/**
-	 * Ìæ»»panel.
+	 * æ›¿æ¢panel.
 	 */
 	private static final JPanel replacePanel = new JPanel();
 	
 	/**
-	 * µ¥Ñ¡°´Å¥×é.
+	 * å•é€‰æŒ‰é’®ç»„.
 	 */
 	private static final ButtonGroup bGroup = new ButtonGroup();
 	
 	/**
-	 * ÁìÓò¶ÔÏó.
+	 * é¢†åŸŸå¯¹è±¡.
 	 */
 	private static final DomainHelper domain = DomainHelper.getInstance();
 	
 	/**
-	 * ²éÕÒ¶Ô»°¿ò.
+	 * æŸ¥æ‰¾å¯¹è¯æ¡†.
 	 */
-	private static final JDialog findDialog = new JDialog(domain.getFrame(), "²éÕÒÓëÌæ»»", true);
+	private static final JDialog findDialog = new JDialog(domain.getFrame(), "æŸ¥æ‰¾ä¸æ›¿æ¢", true);
 	
 	/**
-	 * ¶Ô»°¿òÈİÆ÷.
+	 * å¯¹è¯æ¡†å®¹å™¨.
 	 */
 	private static final Container container = findDialog.getContentPane();
 	
 	/**
-	 * ²éÕÒ±à¼­¿ò.
+	 * æŸ¥æ‰¾ç¼–è¾‘æ¡†.
 	 */
 	private static final JTextField findText = domain.getFindText();
 	
 	/**
-	 * Ìæ»»±à¼­¿ò.
+	 * æ›¿æ¢ç¼–è¾‘æ¡†.
 	 */
 	private static final JTextField replaceText = domain.getReplaceText();
 	
 	/**
-	 * ´óĞ¡Ğ´Ñ¡Ôñ¿ò.
+	 * å¤§å°å†™é€‰æ‹©æ¡†.
 	 */
 	private static final JCheckBox matchCase = domain.getMatchCase(); 
 	
 	/**
-	 * ÏòÉÏ²éÕÒ.
+	 * å‘ä¸ŠæŸ¥æ‰¾.
 	 */
 	private static final JRadioButton up = domain.getUp();
 	
 	/**
-	 * ÏòÏÂ²éÕÒ.
+	 * å‘ä¸‹æŸ¥æ‰¾.
 	 */
 	private static final JRadioButton down = domain.getDown();
 	
 	/**
-	 * ÓĞ²Î¹¹Ôìº¯Êı.
+	 * æœ‰å‚æ„é€ å‡½æ•°.
 	 * @param owner
 	 */
 	private EditReplaceDialog(Frame owner) 
@@ -174,7 +174,7 @@ public class EditReplaceDialog extends BaseDialog
 	}
 	
 	/**
-	 * »ñÈ¡¹ØÓÚ¼ÇÊÂ±¾¶Ô»°¿òµ¥Àı¶ÔÏó.
+	 * è·å–å…³äºè®°äº‹æœ¬å¯¹è¯æ¡†å•ä¾‹å¯¹è±¡.
 	 * @param owner
 	 * @return
 	 */
@@ -190,7 +190,7 @@ public class EditReplaceDialog extends BaseDialog
 	}
 	
 	/**
-     * ³õÊ¼»¯¶Ô»°¿òÒ³Ãæ.
+     * åˆå§‹åŒ–å¯¹è¯æ¡†é¡µé¢.
      */
 	@Override
 	public void initDialog() 
@@ -205,21 +205,21 @@ public class EditReplaceDialog extends BaseDialog
         searchNext.setPreferredSize(new Dimension(110, 22));  
         replace.setPreferredSize(new Dimension(110, 22));  
         replaceAll.setPreferredSize(new Dimension(110, 22));  
-        // "Ìæ»»"°´Å¥µÄÊÂ¼ş´¦Àí  
+        // "æ›¿æ¢"æŒ‰é’®çš„äº‹ä»¶å¤„ç†  
         replace.addActionListener(new ReplaceAction());  
   
-        // "Ìæ»»È«²¿"°´Å¥µÄÊÂ¼ş´¦Àí  
+        // "æ›¿æ¢å…¨éƒ¨"æŒ‰é’®çš„äº‹ä»¶å¤„ç†  
         replaceAll.addActionListener(new ReplaceAllAction());
   
-        // "²éÕÒÏÂÒ»¸ö"°´Å¥ÊÂ¼ş´¦Àí  
+        // "æŸ¥æ‰¾ä¸‹ä¸€ä¸ª"æŒ‰é’®äº‹ä»¶å¤„ç†  
         searchNext.addActionListener(FindAction.getInstance());
-        // "È¡Ïû"°´Å¥¼°ÊÂ¼ş´¦Àí  
+        // "å–æ¶ˆ"æŒ‰é’®åŠäº‹ä»¶å¤„ç†  
          
         cancel.setPreferredSize(new Dimension(110, 22));  
         cancel.addActionListener(new CancelAction(findDialog));  
   
          
-        direction.setBorder(BorderFactory.createTitledBorder("·½Ïò "));  
+        direction.setBorder(BorderFactory.createTitledBorder("æ–¹å‘ "));  
         direction.add(up);  
         direction.add(down);  
         direction.setPreferredSize(new Dimension(170, 60));  
@@ -242,7 +242,7 @@ public class EditReplaceDialog extends BaseDialog
         container.add(centerPanel);  
         container.add(bottomPanel);  
   
-        // ÉèÖÃ"²éÕÒÓëÌæ»»"¶Ô»°¿òµÄ´óĞ¡¡¢¿É¸ü¸Ä´óĞ¡(·ñ)¡¢Î»ÖÃºÍ¿É¼ûĞÔ  
+        // è®¾ç½®"æŸ¥æ‰¾ä¸æ›¿æ¢"å¯¹è¯æ¡†çš„å¤§å°ã€å¯æ›´æ”¹å¤§å°(å¦)ã€ä½ç½®å’Œå¯è§æ€§  
         findDialog.setSize(410, 210);  
         findDialog.setResizable(false);  
         findDialog.setLocation(230, 280);  

@@ -2,10 +2,10 @@
 * @FileName: MenuMain.java
 * @Package: xyz.wchy.menu
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: MenuMain.java: ¼ÇÊÂ±¾²Ëµ¥.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: MenuMain.java: è®°äº‹æœ¬èœå•.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.menu;
@@ -17,59 +17,59 @@ import javax.swing.JMenuBar;
 * 
 * @Description: 
 * <p>
-* ¼ÇÊÂ±¾²Ëµ¥.
+* è®°äº‹æœ¬èœå•.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ24ÈÕ ÉÏÎç11:22:54.
+* @Date: 2018å¹´1æœˆ24æ—¥ ä¸Šåˆ11:22:54.
 * 
 */
 public class MenuMain 
 {
 	
 	/**
-	 * ²Ëµ¥À¸.
+	 * èœå•æ .
 	 */
 	private JMenuBar menuBar = new JMenuBar();
 	
 	/**
-	 * ÎÄ¼ş²Ù×÷²Ëµ¥.
+	 * æ–‡ä»¶æ“ä½œèœå•.
 	 */
 	private MenuFile menuFile = new MenuFile();
 	
 	/**
-	 * ±à¼­²Ù×÷²Ëµ¥.
+	 * ç¼–è¾‘æ“ä½œèœå•.
 	 */
 	private MenuEdit menuEdit = new MenuEdit();
 	
 	/**
-	 * ¸ñÊ½²Ù×÷²Ëµ¥.
+	 * æ ¼å¼æ“ä½œèœå•.
 	 */
 	private MenuFormat menuFormat = new MenuFormat();
 	
 	/**
-	 * ²é¿´²Ù×÷²Ëµ¥.
+	 * æŸ¥çœ‹æ“ä½œèœå•.
 	 */
 	private MenuView menuView = new MenuView();
 	
 	/**
-	 * °ïÖú²Ù×÷²Ëµ¥.
+	 * å¸®åŠ©æ“ä½œèœå•.
 	 */
 	private MenuHelp menuHelp = new MenuHelp();
 	
 	/**
-	 * ¹¹Ôìº¯Êı.
+	 * æ„é€ å‡½æ•°.
 	 */
 	public MenuMain() 
 	{
-		// ¸ø²Ëµ¥À¸Ìí¼Ó²Ëµ¥.
+		// ç»™èœå•æ æ·»åŠ èœå•.
 		menuBar.add(menuFile.getMenu());
 		menuBar.add(menuEdit.getMenu());
 		menuBar.add(menuFormat.getMenu());
@@ -78,7 +78,7 @@ public class MenuMain
 	}
 
 	/**
-	 * »ñÈ¡menuBar.
+	 * è·å–menuBar.
 	 * @return
 	 *     menuBar.
 	 */

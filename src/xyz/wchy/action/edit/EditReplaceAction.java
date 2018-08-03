@@ -2,10 +2,10 @@
 * @FileName: EditReplaceAction.java
 * @Package: xyz.wchy.action.edit
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: EditReplaceAction.java: ±à¼­²Ù×÷²Ëµ¥-Ìæ»»ÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: EditReplaceAction.java: ç¼–è¾‘æ“ä½œèœå•-æ›¿æ¢äº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.edit;
@@ -20,18 +20,18 @@ import xyz.wchy.dialog.edit.EditReplaceDialog;
 * 
 * @Description: 
 * <p>
-* ±à¼­²Ù×÷²Ëµ¥-Ìæ»»ÊÂ¼ş.
+* ç¼–è¾‘æ“ä½œèœå•-æ›¿æ¢äº‹ä»¶.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ21ÈÕ ÉÏÎç12:46:10.
+* @Date: 2018å¹´1æœˆ21æ—¥ ä¸Šåˆ12:46:10.
 * 
 */
 public class EditReplaceAction extends BaseAction 

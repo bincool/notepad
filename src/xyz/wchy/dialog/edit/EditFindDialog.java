@@ -2,10 +2,10 @@
 * @FileName: EditFindDialog.java
 * @Package: xyz.wchy.dialog.edit
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: EditFindDialog.java: ±à¼­²éÕÒ¶Ô»°¿ò.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: EditFindDialog.java: ç¼–è¾‘æŸ¥æ‰¾å¯¹è¯æ¡†.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.dialog.edit;
@@ -35,95 +35,95 @@ import xyz.wchy.utils.DomainHelper;
 * 
 * @Description: 
 * <p>
-* ±à¼­²éÕÒ¶Ô»°¿ò.
+* ç¼–è¾‘æŸ¥æ‰¾å¯¹è¯æ¡†.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ25ÈÕ ÏÂÎç4:39:07.
+* @Date: 2018å¹´1æœˆ25æ—¥ ä¸‹åˆ4:39:07.
 * 
 */
 public class EditFindDialog extends BaseDialog 
 {
 	
 	/**
-	 * ĞòÁĞ°æ±¾ºÅ.
+	 * åºåˆ—ç‰ˆæœ¬å·.
 	 */
 	private static final long serialVersionUID = 1L;
 	
 	/**
-	 * ÁìÓò¶ÔÏó.
+	 * é¢†åŸŸå¯¹è±¡.
 	 */
 	private static final DomainHelper domain = DomainHelper.getInstance();
 	
 	/**
-	 * ²éÕÒ¶Ô»°¿òµ¥ÀıÀà.
+	 * æŸ¥æ‰¾å¯¹è¯æ¡†å•ä¾‹ç±».
 	 */
 	private static EditFindDialog instance = null;
     
 	/**
-	 * ²éÕÒÄÚÈİ(N).
+	 * æŸ¥æ‰¾å†…å®¹(N).
 	 */
-	private static final JLabel searchLabel = new JLabel("²éÕÒÄÚÈİ(N) :");
+	private static final JLabel searchLabel = new JLabel("æŸ¥æ‰¾å†…å®¹(N) :");
     
 	/**
-	 * ²éÕÒÏÂÒ»¸ö(F)
+	 * æŸ¥æ‰¾ä¸‹ä¸€ä¸ª(F)
 	 */
-	private static final JButton searchNext = new JButton("²éÕÒÏÂÒ»¸ö(F)");
+	private static final JButton searchNext = new JButton("æŸ¥æ‰¾ä¸‹ä¸€ä¸ª(F)");
     
 	/**
-	 * È¡Ïû.
+	 * å–æ¶ˆ.
 	 */
-	private static final JButton cancel = new JButton("È¡Ïû");
+	private static final JButton cancel = new JButton("å–æ¶ˆ");
 	
 	/**
-	 * µ¥Ñ¡°´Å¥×é.
+	 * å•é€‰æŒ‰é’®ç»„.
 	 */
 	private static final ButtonGroup bGroup = new ButtonGroup();
 	
 	/**
-	 * ²éÕÒ¶Ô»°¿ò.
+	 * æŸ¥æ‰¾å¯¹è¯æ¡†.
 	 */
-	private static final JDialog findDialog = new JDialog(domain.getFrame(), "²éÕÒÓëÌæ»»", true);
+	private static final JDialog findDialog = new JDialog(domain.getFrame(), "æŸ¥æ‰¾ä¸æ›¿æ¢", true);
 	
 	/**
-	 * ¶Ô»°¿òÈİÆ÷.
+	 * å¯¹è¯æ¡†å®¹å™¨.
 	 */
 	private static final Container container = findDialog.getContentPane();
 	
 	/**
-	 * ²éÕÒ±à¼­¿ò.
+	 * æŸ¥æ‰¾ç¼–è¾‘æ¡†.
 	 */
 	private static final JTextField findText = domain.getFindText();
     
 	/**
-	 * ´óĞ¡Ğ´Ñ¡Ôñ¿ò.
+	 * å¤§å°å†™é€‰æ‹©æ¡†.
 	 */
 	private static final JCheckBox matchCase = domain.getMatchCase();
     
 	/**
-	 * ÏòÉÏ²éÕÒ.
+	 * å‘ä¸ŠæŸ¥æ‰¾.
 	 */
 	private static final JRadioButton up = domain.getUp();
     
 	/**
-	 * ÏòÏÂ²éÕÒ.
+	 * å‘ä¸‹æŸ¥æ‰¾.
 	 */
 	private static final JRadioButton down = domain.getDown();
     
-    // ´´½¨"²éÕÒÓëÌæ»»"¶Ô»°¿òµÄ½çÃæ  
+    // åˆ›å»º"æŸ¥æ‰¾ä¸æ›¿æ¢"å¯¹è¯æ¡†çš„ç•Œé¢  
     JPanel bottomPanel = new JPanel();
     JPanel topPanel = new JPanel();
     JPanel direction = new JPanel();
 	
 	/**
-	 * ÓĞ²Î¹¹Ôìº¯Êı.
+	 * æœ‰å‚æ„é€ å‡½æ•°.
 	 * @param owner
 	 */
 	private EditFindDialog(Frame owner) 
@@ -132,7 +132,7 @@ public class EditFindDialog extends BaseDialog
 	}
 	
 	/**
-	 * »ñÈ¡¹ØÓÚ¼ÇÊÂ±¾¶Ô»°¿òµ¥Àı¶ÔÏó.
+	 * è·å–å…³äºè®°äº‹æœ¬å¯¹è¯æ¡†å•ä¾‹å¯¹è±¡.
 	 * @param owner
 	 * @return
 	 */
@@ -148,7 +148,7 @@ public class EditFindDialog extends BaseDialog
 	}
 	
 	/**
-     * ³õÊ¼»¯¶Ô»°¿òÒ³Ãæ.
+     * åˆå§‹åŒ–å¯¹è¯æ¡†é¡µé¢.
      */
 	@Override
 	public void initDialog() 
@@ -163,7 +163,7 @@ public class EditFindDialog extends BaseDialog
         topPanel.add(findText);
         topPanel.add(searchNext);
         
-        direction.setBorder(BorderFactory.createTitledBorder("·½Ïò "));
+        direction.setBorder(BorderFactory.createTitledBorder("æ–¹å‘ "));
         down.setSelected(true);
         bGroup.add(up);
         bGroup.add(down);
@@ -177,12 +177,12 @@ public class EditFindDialog extends BaseDialog
         container.add(topPanel);
         container.add(bottomPanel);
         
-        // "²éÕÒÏÂÒ»¸ö"°´Å¥ÊÂ¼ş´¦Àí.
+        // "æŸ¥æ‰¾ä¸‹ä¸€ä¸ª"æŒ‰é’®äº‹ä»¶å¤„ç†.
         searchNext.addActionListener(FindAction.getInstance());
         
         cancel.addActionListener(new CancelAction(findDialog));
         
-        // ÉèÖÃ"²éÕÒÓëÌæ»»"¶Ô»°¿òµÄ´óĞ¡¡¢¿É¸ü¸Ä´óĞ¡(·ñ)¡¢Î»ÖÃºÍ¿É¼ûĞÔ.
+        // è®¾ç½®"æŸ¥æ‰¾ä¸æ›¿æ¢"å¯¹è¯æ¡†çš„å¤§å°ã€å¯æ›´æ”¹å¤§å°(å¦)ã€ä½ç½®å’Œå¯è§æ€§.
         findDialog.setSize(410, 160);
         findDialog.setResizable(false);
         findDialog.setLocation(230, 280);

@@ -2,10 +2,10 @@
 * @FileName: ReplaceAllAction.java
 * @Package: xyz.wchy.action.dialog
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: ReplaceAllAction.java: Ìæ»»È«²¿¹¦ÄÜ.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: ReplaceAllAction.java: æ›¿æ¢å…¨éƒ¨åŠŸèƒ½.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.dialog;
@@ -25,50 +25,50 @@ import xyz.wchy.action.base.BaseAction;
 * 
 * @Description: 
 * <p>
-* Ìæ»»È«²¿¹¦ÄÜ.
+* æ›¿æ¢å…¨éƒ¨åŠŸèƒ½.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ26ÈÕ ÉÏÎç11:50:34.
+* @Date: 2018å¹´1æœˆ26æ—¥ ä¸Šåˆ11:50:34.
 * 
 */
 public class ReplaceAllAction extends BaseAction 
 {
 	
 	/**
-	 * ÎÄ±¾Óò.
+	 * æ–‡æœ¬åŸŸ.
 	 */
 	private static final JTextArea textArea = domain.getTextPane().getTextArea();
 	
 	/**
-	 * ²éÕÒ±à¼­¿ò.
+	 * æŸ¥æ‰¾ç¼–è¾‘æ¡†.
 	 */
 	private static final JTextField findText = domain.getFindText();
 	
 	/**
-	 * Ìæ»»±à¼­¿ò.
+	 * æ›¿æ¢ç¼–è¾‘æ¡†.
 	 */
 	private static final JTextField replaceText = domain.getReplaceText();
     
 	/**
-	 * ´óĞ¡Ğ´Ñ¡Ôñ¿ò.
+	 * å¤§å°å†™é€‰æ‹©æ¡†.
 	 */
 	private static final JCheckBox matchCase = domain.getMatchCase();
     
 	/**
-	 * ÏòÉÏ²éÕÒ.
+	 * å‘ä¸ŠæŸ¥æ‰¾.
 	 */
 	private static final JRadioButton up = domain.getUp();
     
 	/**
-	 * ÏòÏÂ²éÕÒ.
+	 * å‘ä¸‹æŸ¥æ‰¾.
 	 */
 	private static final JRadioButton down = domain.getDown();
 	
@@ -78,12 +78,12 @@ public class ReplaceAllAction extends BaseAction
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
-		textArea.setCaretPosition(0); // ½«¹â±ê·Åµ½±à¼­Çø¿ªÍ·  
+		textArea.setCaretPosition(0); // å°†å…‰æ ‡æ”¾åˆ°ç¼–è¾‘åŒºå¼€å¤´  
         int a = 0, b = 0, replaceCount = 0;  
 
         if (findText.getText().length() == 0) 
         {  
-            JOptionPane.showMessageDialog(null, "ÇëÌîĞ´²éÕÒÄÚÈİ!", "ÌáÊ¾", JOptionPane.WARNING_MESSAGE);  
+            JOptionPane.showMessageDialog(null, "è¯·å¡«å†™æŸ¥æ‰¾å†…å®¹!", "æç¤º", JOptionPane.WARNING_MESSAGE);  
             findText.requestFocus(true);  
             return;  
         }  
@@ -150,11 +150,11 @@ public class ReplaceAllAction extends BaseAction
             {  
                 if (replaceCount == 0) 
                 {  
-                    JOptionPane.showMessageDialog(null, "ÕÒ²»µ½Äú²éÕÒµÄÄÚÈİ!", "¼ÇÊÂ±¾", JOptionPane.INFORMATION_MESSAGE);  
+                    JOptionPane.showMessageDialog(null, "æ‰¾ä¸åˆ°æ‚¨æŸ¥æ‰¾çš„å†…å®¹!", "è®°äº‹æœ¬", JOptionPane.INFORMATION_MESSAGE);  
                 } 
                 else 
                 {  
-                    JOptionPane.showMessageDialog(null, "³É¹¦Ìæ»»" + replaceCount + "¸öÆ¥ÅäÄÚÈİ!", "Ìæ»»³É¹¦", JOptionPane.INFORMATION_MESSAGE);  
+                    JOptionPane.showMessageDialog(null, "æˆåŠŸæ›¿æ¢" + replaceCount + "ä¸ªåŒ¹é…å†…å®¹!", "æ›¿æ¢æˆåŠŸ", JOptionPane.INFORMATION_MESSAGE);  
                 }  
             }  
             if (replaceText.getText().length() == 0 && textArea.getSelectedText() != null) 

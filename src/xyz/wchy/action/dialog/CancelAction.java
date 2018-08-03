@@ -2,10 +2,10 @@
 * @FileName: CancelAction.java
 * @Package: xyz.wchy.action.dialog
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: CancelAction.java: ¶Ô»°¿òÈ¡Ïû¹¦ÄÜ.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÏÂÎç12:53:29.
-* @Content: ĞÂÔö.
+* @Description: CancelAction.java: å¯¹è¯æ¡†å–æ¶ˆåŠŸèƒ½.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸‹åˆ12:53:29.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.dialog;
@@ -21,30 +21,30 @@ import xyz.wchy.action.base.BaseAction;
 * 
 * @Description: 
 * <p>
-* ¶Ô»°¿òÈ¡Ïû¹¦ÄÜ.
+* å¯¹è¯æ¡†å–æ¶ˆåŠŸèƒ½.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ29ÈÕ ÏÂÎç12:53:29.
+* @Date: 2018å¹´1æœˆ29æ—¥ ä¸‹åˆ12:53:29.
 * 
 */
 public class CancelAction extends BaseAction 
 {
 	
 	/**
-	 * ¶Ô»°¿ò.
+	 * å¯¹è¯æ¡†.
 	 */
 	private JDialog jDialog = null;
 	
 	/**
-	 * ¹¹Ôìº¯Êı.
+	 * æ„é€ å‡½æ•°.
 	 */
 	public CancelAction(JDialog jDialog) 
 	{

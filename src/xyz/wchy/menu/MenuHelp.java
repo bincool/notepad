@@ -2,10 +2,10 @@
 * @FileName: MenuHelp.java
 * @Package: xyz.wchy.menu
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: MenuHelp.java: °ïÖú²Ù×÷²Ëµ¥.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: MenuHelp.java: å¸®åŠ©æ“ä½œèœå•.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.menu;
@@ -25,40 +25,40 @@ import xyz.wchy.menu.base.MenuBase;
 * 
 * @Description: 
 * <p>
-* °ïÖú²Ù×÷²Ëµ¥£º°ïÖú(H)¡¢²é¿´°ïÖú(H)¡¢¹ØÓÚ¼ÇÊÂ±¾(A).
+* å¸®åŠ©æ“ä½œèœå•ï¼šå¸®åŠ©(H)ã€æŸ¥çœ‹å¸®åŠ©(H)ã€å…³äºè®°äº‹æœ¬(A).
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ15ÈÕ ÏÂÎç11:30:18.
+* @Date: 2018å¹´1æœˆ15æ—¥ ä¸‹åˆ11:30:18.
 * 
 */
 public class MenuHelp extends MenuBase 
 {
 	
 	/**
-	 * °ïÖú²Ëµ¥.
+	 * å¸®åŠ©èœå•.
 	 */
 	private JMenu menu = new JMenu(NodePadConstant.MENU_TITLE_HELP);
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬²é¿´°ïÖú(H).
+	 * äºŒçº§èœå•ï¼ŒæŸ¥çœ‹å¸®åŠ©(H).
 	 */
 	private JMenuItem menuHelpView = domain.getMenuHelpView();
 	
 	/**
-	 * ¶ş¼¶²Ëµ¥£¬¹ØÓÚ¼ÇÊÂ±¾(A).
+	 * äºŒçº§èœå•ï¼Œå…³äºè®°äº‹æœ¬(A).
 	 */
 	private JMenuItem menuHelpAboutNotepad = domain.getMenuHelpAboutNotepad();
 	
 	/**
-	 * ¹¹Ôìº¯Êı.
+	 * æ„é€ å‡½æ•°.
 	 */
 	public MenuHelp() 
 	{
@@ -67,7 +67,7 @@ public class MenuHelp extends MenuBase
 	}
 
 	/**
-	 * »ñÈ¡menu.
+	 * è·å–menu.
 	 * @return
 	 *     menu.
 	 */

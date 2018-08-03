@@ -2,10 +2,10 @@
 * @FileName: FileNewAction.java
 * @Package: xyz.wchy.action.file
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: FileNewAction.java: ÎÄ¼ş²Ù×÷²Ëµ¥-ĞÂ½¨ÊÂ¼ş.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÉÏÎç10:13:40.
-* @Content: ĞÂÔö.
+* @Description: FileNewAction.java: æ–‡ä»¶æ“ä½œèœå•-æ–°å»ºäº‹ä»¶.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸Šåˆ10:13:40.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.file;
@@ -25,25 +25,25 @@ import xyz.wchy.utils.StringUtils;
 * 
 * @Description: 
 * <p>
-* ÎÄ¼ş²Ù×÷²Ëµ¥-ĞÂ½¨ÊÂ¼ş.
+* æ–‡ä»¶æ“ä½œèœå•-æ–°å»ºäº‹ä»¶.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ16ÈÕ ÏÂÎç1:12:31.
+* @Date: 2018å¹´1æœˆ16æ—¥ ä¸‹åˆ1:12:31.
 * 
 */
 public class FileNewAction extends BaseAction 
 {
 
 	/**
-	 * ĞÂ½¨ÎÄ¼şÇ°Ó¦¸ÃÌáÊ¾ÊÇ·ñÏÈ±£´æ.
+	 * æ–°å»ºæ–‡ä»¶å‰åº”è¯¥æç¤ºæ˜¯å¦å…ˆä¿å­˜.
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e) 
@@ -55,39 +55,39 @@ public class FileNewAction extends BaseAction
 		
 		if(StringUtils.isNotEmpty(fileName) && StringUtils.isNotEmpty(content)) 
 		{
-			String tips = "ÊÇ·ñ½«¸ü¸Ä±£´æµ½\n" + fileName;
-            int value = JOptionPane.showConfirmDialog(domain.getFrame(), tips, "¼ÇÊÂ±¾", JOptionPane.YES_NO_CANCEL_OPTION);
+			String tips = "æ˜¯å¦å°†æ›´æ”¹ä¿å­˜åˆ°\n" + fileName;
+            int value = JOptionPane.showConfirmDialog(domain.getFrame(), tips, "è®°äº‹æœ¬", JOptionPane.YES_NO_CANCEL_OPTION);
             if(2 == value) 
             {
-            	// È¡Ïû£¬.
+            	// å–æ¶ˆï¼Œ.
             	return ;
             } 
             else if(1 == value) 
             {
-            	// ·µ»Ø·ñ£¬.
+            	// è¿”å›å¦ï¼Œ.
             } 
             else if(0 == value) 
             {
-            	// ·µ»ØÊÇ£¬Ö´ĞĞ±£´æ²Ù×÷È»ºó³õÊ¼»¯.
+            	// è¿”å›æ˜¯ï¼Œæ‰§è¡Œä¿å­˜æ“ä½œç„¶ååˆå§‹åŒ–.
             	FileHelper.writeFile(fileName, content);
             }
         } 
 		else 
 		{
-			String tips = "ÊÇ·ñ½«¸ü¸Ä±£´æµ½\nÎŞ±êÌâ";
-            int value = JOptionPane.showConfirmDialog(domain.getFrame(), tips, "¼ÇÊÂ±¾", JOptionPane.YES_NO_CANCEL_OPTION);
+			String tips = "æ˜¯å¦å°†æ›´æ”¹ä¿å­˜åˆ°\næ— æ ‡é¢˜";
+            int value = JOptionPane.showConfirmDialog(domain.getFrame(), tips, "è®°äº‹æœ¬", JOptionPane.YES_NO_CANCEL_OPTION);
             if(2 == value) 
             {
-            	// È¡Ïû£¬.
+            	// å–æ¶ˆï¼Œ.
             	return ;
             } 
             else if(1 == value) 
             {
-            	// ·µ»Ø·ñ£¬.
+            	// è¿”å›å¦ï¼Œ.
             } 
             else if(0 == value) 
             {
-            	// ·µ»ØÊÇ£¬Ö´ĞĞ±£´æ²Ù×÷È»ºó³õÊ¼»¯.
+            	// è¿”å›æ˜¯ï¼Œæ‰§è¡Œä¿å­˜æ“ä½œç„¶ååˆå§‹åŒ–.
             	new FileSaveAsAction().actionPerformed(e);
             }
 		}

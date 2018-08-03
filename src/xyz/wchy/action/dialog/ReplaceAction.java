@@ -2,10 +2,10 @@
 * @FileName: ReplaceAction.java
 * @Package: xyz.wchy.action.dialog
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: ReplaceAction.java: Ìæ»»¹¦ÄÜ.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ29ÈÕ ÏÂÎç1:43:20.
-* @Content: ĞÂÔö.
+* @Description: ReplaceAction.java: æ›¿æ¢åŠŸèƒ½.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ29æ—¥ ä¸‹åˆ1:43:20.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.action.dialog;
@@ -22,30 +22,30 @@ import xyz.wchy.utils.StringUtils;
 * 
 * @Description: 
 * <p>
-* Ìæ»»¹¦ÄÜ.
+* æ›¿æ¢åŠŸèƒ½.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ29ÈÕ ÏÂÎç1:43:20.
+* @Date: 2018å¹´1æœˆ29æ—¥ ä¸‹åˆ1:43:20.
 * 
 */
 public class ReplaceAction extends BaseAction 
 {
 	
 	/**
-	 * ÎÄ±¾Óò.
+	 * æ–‡æœ¬åŸŸ.
 	 */
 	private static final JTextArea textArea = domain.getTextPane().getTextArea();
 	
 	/**
-	 * Ìæ»»±à¼­¿ò.
+	 * æ›¿æ¢ç¼–è¾‘æ¡†.
 	 */
 	private static final JTextField replaceText = domain.getReplaceText();
 

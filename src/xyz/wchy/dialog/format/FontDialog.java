@@ -2,10 +2,10 @@
 * @FileName: FontDialog.java
 * @Package: xyz.wchy.dialog.format
 * @Copyright: 2018 bincool.github.io Inc. All Rights Reserved.
-* @Description: FontDialog.java: ×ÖÌåÑ¡Ôñ¶Ô»°¿ò.
-* @Author wchy£¬¼¼Êõ½»Á÷(891946049).
-* @Date 2018Äê1ÔÂ31ÈÕ ÏÂÎç1:07:03.
-* @Content: ĞÂÔö.
+* @Description: FontDialog.java: å­—ä½“é€‰æ‹©å¯¹è¯æ¡†.
+* @Author wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
+* @Date 2018å¹´1æœˆ31æ—¥ ä¸‹åˆ1:07:03.
+* @Content: æ–°å¢.
 * @Version: V1.0.
 */
 package xyz.wchy.dialog.format;
@@ -44,154 +44,154 @@ import xyz.wchy.dialog.base.BaseDialog;
 * 
 * @Description: 
 * <p>
-* ×ÖÌåÑ¡Ôñ¶Ô»°¿ò.
+* å­—ä½“é€‰æ‹©å¯¹è¯æ¡†.
 * </p>
 * <p>
-* ÏêÏ¸ÃèÊö.
+* è¯¦ç»†æè¿°.
 * </p>
 * <p>
-* Ê¾Àı´úÂë.
+* ç¤ºä¾‹ä»£ç .
 * </p>
 *
-* @Author: wchy£¬¼¼Êõ½»Á÷(891946049).
+* @Author: wchyï¼ŒæŠ€æœ¯äº¤æµ(891946049).
 * 
-* @Date: 2018Äê1ÔÂ31ÈÕ ÏÂÎç1:07:03.
+* @Date: 2018å¹´1æœˆ31æ—¥ ä¸‹åˆ1:07:03.
 * 
 */
 public class FontDialog extends BaseDialog 
 {
 
 	/**
-	 * ĞòÁĞ°æ±¾ID.
+	 * åºåˆ—ç‰ˆæœ¬ID.
 	 */
 	private static final long serialVersionUID = 1L;
 	
 	/**
-	 * ×ÖÌå¶Ô»°¿òµ¥ÀıÀà.
+	 * å­—ä½“å¯¹è¯æ¡†å•ä¾‹ç±».
 	 */
 	private static FontDialog instance = null;
 
 	/**
-	 * Ñ¡ÔñÈ¡Ïû°´Å¥µÄ·µ»ØÖµ.
+	 * é€‰æ‹©å–æ¶ˆæŒ‰é’®çš„è¿”å›å€¼.
 	 */
 	public static final int CANCEL_OPTION = 0;
 
 	/**
-	 * Ñ¡ÔñÈ·¶¨°´Å¥µÄ·µ»ØÖµ.
+	 * é€‰æ‹©ç¡®å®šæŒ‰é’®çš„è¿”å›å€¼.
 	 */
 	public static final int APPROVE_OPTION = 1;
 
 	/**
-	 * ÖĞÎÄÔ¤ÀÀµÄ×Ö·û´®.
+	 * ä¸­æ–‡é¢„è§ˆçš„å­—ç¬¦ä¸².
 	 */
-	private static final String CHINA_STRING = "¼ÇÊÂ±¾";
+	private static final String CHINA_STRING = "è®°äº‹æœ¬";
 
 	/**
-	 * Ó¢ÎÄÔ¤ÀÀµÄ×Ö·û´®.
+	 * è‹±æ–‡é¢„è§ˆçš„å­—ç¬¦ä¸².
 	 */
 	private static final String ENGLISH_STRING = "NotePad";
 
 	/**
-	 * Êı×ÖÔ¤ÀÀµÄ×Ö·û´®.
+	 * æ•°å­—é¢„è§ˆçš„å­—ç¬¦ä¸².
 	 */
 	private static final String NUMBER_STRING = "891946049";
 	
 	/**
-	 * ×ÖÌåÎÄ±¾¿ò.
+	 * å­—ä½“æ–‡æœ¬æ¡†.
 	 */
 	private static final JTextField fontText = new JTextField();
 
 	/**
-	 * ÑùÊ½ÎÄ±¾¿ò.
+	 * æ ·å¼æ–‡æœ¬æ¡†.
 	 */
 	private static final JTextField styleText = new JTextField();
 
 	/**
-	 * ÎÄ×Ö´óĞ¡ÎÄ±¾¿ò.
+	 * æ–‡å­—å¤§å°æ–‡æœ¬æ¡†.
 	 */
 	private static final JTextField sizeText = new JTextField();
 
 	/**
-	 * Ô¤ÀÀÎÄ±¾¿ò.
+	 * é¢„è§ˆæ–‡æœ¬æ¡†.
 	 */
 	private static final JTextField previewText = new JTextField(20);
 	
 	/**
-	 * Ô¤ÀÀ°´Å¥×é.
+	 * é¢„è§ˆæŒ‰é’®ç»„.
 	 */
 	private static final ButtonGroup bGroup = new ButtonGroup();
 
 	/**
-	 * ÖĞÎÄÔ¤ÀÀ°´Å¥.
+	 * ä¸­æ–‡é¢„è§ˆæŒ‰é’®.
 	 */
-	private static final JRadioButton chinaButton = new JRadioButton("ÖĞÎÄÔ¤ÀÀ", true);
+	private static final JRadioButton chinaButton = new JRadioButton("ä¸­æ–‡é¢„è§ˆ", true);
 
 	/**
-	 * Ó¢ÎÄÔ¤ÀÀ°´Å¥.
+	 * è‹±æ–‡é¢„è§ˆæŒ‰é’®.
 	 */
-	private static final JRadioButton englishButton = new JRadioButton("Ó¢ÎÄÔ¤ÀÀ", true);
+	private static final JRadioButton englishButton = new JRadioButton("è‹±æ–‡é¢„è§ˆ", true);
 
 	/**
-	 * Êı×ÖÔ¤ÀÀ°´Å¥.
+	 * æ•°å­—é¢„è§ˆæŒ‰é’®.
 	 */
-	private static final JRadioButton numberButton = new JRadioButton("Êı×ÖÔ¤ÀÀ", true);
+	private static final JRadioButton numberButton = new JRadioButton("æ•°å­—é¢„è§ˆ", true);
 
 	/**
-	 * ÏµÍ³×ÖÌå.
+	 * ç³»ç»Ÿå­—ä½“.
 	 */
 	private static final String[] fontArray = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
 
 	/**
-	 * ËùÓĞÑùÊ½.
+	 * æ‰€æœ‰æ ·å¼.
 	 */
-	private static final String[] styleArray = { "³£¹æ", "´ÖÌå", "Ğ±Ìå", "´ÖĞ±Ìå" };
+	private static final String[] styleArray = { "å¸¸è§„", "ç²—ä½“", "æ–œä½“", "ç²—æ–œä½“" };
 
 	/**
-	 * ËùÓĞÔ¤Éè×ÖÌå´óĞ¡.
+	 * æ‰€æœ‰é¢„è®¾å­—ä½“å¤§å°.
 	 */
 	private static final String[] sizeArray = { "8", "9", "10", "11", "12", "14", "16", "18", "20", "22", "24", "26", "28", "36",
-			"48", "72", "³õºÅ", "Ğ¡³õ", "Ò»ºÅ", "Ğ¡Ò»", "¶şºÅ", "Ğ¡¶ş", "ÈıºÅ", "Ğ¡Èı", "ËÄºÅ", "Ğ¡ËÄ", "ÎåºÅ", "Ğ¡Îå", "ÁùºÅ", "Ğ¡Áù", "ÆßºÅ",
-			"°ËºÅ" };
+			"48", "72", "åˆå·", "å°åˆ", "ä¸€å·", "å°ä¸€", "äºŒå·", "å°äºŒ", "ä¸‰å·", "å°ä¸‰", "å››å·", "å°å››", "äº”å·", "å°äº”", "å…­å·", "å°å…­", "ä¸ƒå·",
+			"å…«å·" };
 	
 	/**
-	 * ×ÖÌåÑ¡ÔñÆ÷.
+	 * å­—ä½“é€‰æ‹©å™¨.
 	 */
 	private static final JList<String> fontList = new JList<String>(fontArray);
 
 	/**
-	 * ÑùÊ½Ñ¡ÔñÆ÷.
+	 * æ ·å¼é€‰æ‹©å™¨.
 	 */
 	private static final JList<String> styleList = new JList<String>(styleArray);
 
 	/**
-	 * ÎÄ×Ö´óĞ¡Ñ¡ÔñÆ÷.
+	 * æ–‡å­—å¤§å°é€‰æ‹©å™¨.
 	 */
 	private static final JList<String> sizeList = new JList<String>(sizeArray);
 	
 	/**
-	 * ÉÏÃæÊı×éÖĞ¶ÔÓ¦µÄ×ÖÌå´óĞ¡.
+	 * ä¸Šé¢æ•°ç»„ä¸­å¯¹åº”çš„å­—ä½“å¤§å°.
 	 */
 	private static final Map<String, Integer> sizeMap = new HashMap<String, Integer>();
 	
 	/**
-	 * ×ÖÌå.
+	 * å­—ä½“.
 	 */
-	private static Font font = new Font("ËÎÌå", Font.PLAIN, 16);
+	private static Font font = new Font("å®‹ä½“", Font.PLAIN, 16);
 
 	/**
-	 * ×ÖÌåÑ¡ÔñÆ÷Ö÷ÈİÆ÷.
+	 * å­—ä½“é€‰æ‹©å™¨ä¸»å®¹å™¨.
 	 */
 	private static final Box box = Box.createVerticalBox();
 
 	/**
-	 * È·¶¨°´Å¥.
+	 * ç¡®å®šæŒ‰é’®.
 	 */
-	private static final JButton approveButton = new JButton("È·¶¨");
+	private static final JButton approveButton = new JButton("ç¡®å®š");
 	
 	/**
-	 * È¡Ïû°´Å¥.
+	 * å–æ¶ˆæŒ‰é’®.
 	 */
-	private static final JButton cancelButton = new JButton("È¡Ïû");
+	private static final JButton cancelButton = new JButton("å–æ¶ˆ");
 
 	static 
 	{
@@ -211,22 +211,22 @@ public class FontDialog extends BaseDialog
 		sizeMap.put("36", 36);
 		sizeMap.put("48", 48);
 		sizeMap.put("72", 72);
-		sizeMap.put("³õºÅ", 42);
-		sizeMap.put("Ğ¡³õ", 36);
-		sizeMap.put("Ò»ºÅ", 26);
-		sizeMap.put("Ğ¡Ò»", 24);
-		sizeMap.put("¶şºÅ", 22);
-		sizeMap.put("Ğ¡¶ş", 18);
-		sizeMap.put("ÈıºÅ", 16);
-		sizeMap.put("Ğ¡Èı", 15);
-		sizeMap.put("ËÄºÅ", 14);
-		sizeMap.put("Ğ¡ËÄ", 12);
-		sizeMap.put("ÎåºÅ", 10);
-		sizeMap.put("Ğ¡Îå", 9);
-		sizeMap.put("ÁùºÅ", 8);
-		sizeMap.put("Ğ¡Áù", 7);
-		sizeMap.put("ÆßºÅ", 6);
-		sizeMap.put("°ËºÅ", 5);
+		sizeMap.put("åˆå·", 42);
+		sizeMap.put("å°åˆ", 36);
+		sizeMap.put("ä¸€å·", 26);
+		sizeMap.put("å°ä¸€", 24);
+		sizeMap.put("äºŒå·", 22);
+		sizeMap.put("å°äºŒ", 18);
+		sizeMap.put("ä¸‰å·", 16);
+		sizeMap.put("å°ä¸‰", 15);
+		sizeMap.put("å››å·", 14);
+		sizeMap.put("å°å››", 12);
+		sizeMap.put("äº”å·", 10);
+		sizeMap.put("å°äº”", 9);
+		sizeMap.put("å…­å·", 8);
+		sizeMap.put("å°å…­", 7);
+		sizeMap.put("ä¸ƒå·", 6);
+		sizeMap.put("å…«å·", 5);
 	}
 
 	/**
@@ -239,7 +239,7 @@ public class FontDialog extends BaseDialog
 	}
 	
 	/**
-	 * »ñÈ¡¹ØÓÚ¼ÇÊÂ±¾¶Ô»°¿òµ¥Àı¶ÔÏó.
+	 * è·å–å…³äºè®°äº‹æœ¬å¯¹è¯æ¡†å•ä¾‹å¯¹è±¡.
 	 * @param owner
 	 * @return
 	 */
@@ -267,7 +267,7 @@ public class FontDialog extends BaseDialog
 	@Override
 	protected void initDialog() 
 	{
-		setTitle("×ÖÌåÑ¡ÔñÆ÷");
+		setTitle("å­—ä½“é€‰æ‹©å™¨");
 		
 		box.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
 		
@@ -290,9 +290,9 @@ public class FontDialog extends BaseDialog
 		
 		
 		Box box1 = Box.createHorizontalBox();
-		JLabel l1 = new JLabel("×ÖÌå:");
-		JLabel l2 = new JLabel("×ÖĞÎ:");
-		JLabel l3 = new JLabel("´óĞ¡:");
+		JLabel l1 = new JLabel("å­—ä½“:");
+		JLabel l2 = new JLabel("å­—å½¢:");
+		JLabel l3 = new JLabel("å¤§å°:");
 		l1.setPreferredSize(new Dimension(165, 14));
 		l1.setMaximumSize(new Dimension(165, 14));
 		l1.setMinimumSize(new Dimension(165, 14));
@@ -341,8 +341,8 @@ public class FontDialog extends BaseDialog
 		Box box4 = Box.createHorizontalBox();
 		Box box5 = Box.createVerticalBox();
 		JPanel box6 = new JPanel(new BorderLayout());
-		box5.setBorder(BorderFactory.createTitledBorder("×Ö·û¼¯"));
-		box6.setBorder(BorderFactory.createTitledBorder("Ê¾Àı"));
+		box5.setBorder(BorderFactory.createTitledBorder("å­—ç¬¦é›†"));
+		box6.setBorder(BorderFactory.createTitledBorder("ç¤ºä¾‹"));
 		box5.add(chinaButton);
 		box5.add(englishButton);
 		box5.add(numberButton);
@@ -370,23 +370,23 @@ public class FontDialog extends BaseDialog
 		box.add(box7);
 		getContentPane().add(box);
 		
-		// Ìí¼Ó¼àÌıÆ÷.
+		// æ·»åŠ ç›‘å¬å™¨.
 		addListener();
 		
-		// °´ÕÕÔ¤Éè×ÖÌåÏÔÊ¾.
+		// æŒ‰ç…§é¢„è®¾å­—ä½“æ˜¾ç¤º.
 		setUp();
 		
-		// »ù±¾ÉèÖÃ.
+		// åŸºæœ¬è®¾ç½®.
 		setModal(true);
 		
 		setResizable(false);
 		
-		// ×ÔÊÊÓ¦´óĞ¡.
+		// è‡ªé€‚åº”å¤§å°.
 		pack();
 	}
 
 	/**
-	 * °´ÕÕÔ¤Éè×ÖÌåÏÔÊ¾
+	 * æŒ‰ç…§é¢„è®¾å­—ä½“æ˜¾ç¤º
 	 */
 	private void setUp() 
 	{
@@ -397,21 +397,21 @@ public class FontDialog extends BaseDialog
 		sizeList.setSelectedValue(String.valueOf(fontSize), true);
 		sizeText.setText(String.valueOf(fontSize));
 		
-		// Ñ¡Ôñ×ÖÌåÁĞ±íÖĞµÄÄ³Ïî
+		// é€‰æ‹©å­—ä½“åˆ—è¡¨ä¸­çš„æŸé¡¹
 		fontList.setSelectedValue(fontName, true);
 		
-		// Ñ¡ÔñÑùÊ½ÁĞ±íÖĞµÄÄ³Ïî
+		// é€‰æ‹©æ ·å¼åˆ—è¡¨ä¸­çš„æŸé¡¹
 		styleList.setSelectedIndex(fontStyle);
 		
-		// Ô¤ÀÀÄ¬ÈÏÏÔÊ¾ÖĞÎÄ×Ö·û
+		// é¢„è§ˆé»˜è®¤æ˜¾ç¤ºä¸­æ–‡å­—ç¬¦
 		chinaButton.doClick();
 		
-		// ÏÔÊ¾Ô¤ÀÀ
+		// æ˜¾ç¤ºé¢„è§ˆ
 		previewText.setFont(groupFont());
 	}
 
 	/**
-	 * Ìí¼ÓËùĞèµÄÊÂ¼ş¼àÌıÆ÷
+	 * æ·»åŠ æ‰€éœ€çš„äº‹ä»¶ç›‘å¬å™¨
 	 */
 	private void addListener() 
 	{
@@ -429,7 +429,7 @@ public class FontDialog extends BaseDialog
 			}
 		});
 
-		// ×ÖÌåÁĞ±í·¢ÉúÑ¡ÔñÊÂ¼şµÄ¼àÌıÆ÷
+		// å­—ä½“åˆ—è¡¨å‘ç”Ÿé€‰æ‹©äº‹ä»¶çš„ç›‘å¬å™¨
 		fontList.addListSelectionListener(new ListSelectionListener() 
 		{
 			public void valueChanged(ListSelectionEvent e) 
@@ -437,7 +437,7 @@ public class FontDialog extends BaseDialog
 				if (!e.getValueIsAdjusting()) 
 				{
 					fontText.setText(String.valueOf(fontList.getSelectedValue()));
-					// ÉèÖÃÔ¤ÀÀ
+					// è®¾ç½®é¢„è§ˆ
 					previewText.setFont(groupFont());
 				}
 			}
@@ -450,7 +450,7 @@ public class FontDialog extends BaseDialog
 				if (!e.getValueIsAdjusting()) 
 				{
 					styleText.setText(String.valueOf(styleList.getSelectedValue()));
-					// ÉèÖÃÔ¤ÀÀ.
+					// è®¾ç½®é¢„è§ˆ.
 					previewText.setFont(groupFont());
 				}
 			}
@@ -466,38 +466,38 @@ public class FontDialog extends BaseDialog
 					{
 						sizeText.setText(String.valueOf(sizeList.getSelectedValue()));
 					}
-					// ÉèÖÃÔ¤ÀÀ.
+					// è®¾ç½®é¢„è§ˆ.
 					previewText.setFont(groupFont());
 				}
 			}
 		});
 
-		// ±àÂë¼àÌıÆ÷.
+		// ç¼–ç ç›‘å¬å™¨.
 		EncodeAction ea = new EncodeAction();
 		chinaButton.addActionListener(ea);
 		englishButton.addActionListener(ea);
 		numberButton.addActionListener(ea);
 
-		// È·¶¨°´Å¥µÄÊÂ¼ş¼àÌı
+		// ç¡®å®šæŒ‰é’®çš„äº‹ä»¶ç›‘å¬
 		approveButton.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent e) 
 			{
-				// ¹Ø±Õ´°¿Ú.
+				// å…³é—­çª—å£.
 				dispose();
 
 				domain.getTextPane().getTextArea().setFont(groupFont());
 			}
 		});
 		
-		// È¡Ïû°´Å¥ÊÂ¼ş¼àÌı.
+		// å–æ¶ˆæŒ‰é’®äº‹ä»¶ç›‘å¬.
 		cancelButton.addActionListener(new CancelAction(this));
 	}
 
 	/**
-	 * °´ÕÕÑ¡Ôñ×éºÏ×ÖÌå
+	 * æŒ‰ç…§é€‰æ‹©ç»„åˆå­—ä½“
 	 * 
-	 * @return ×ÖÌå
+	 * @return å­—ä½“
 	 */
 	private Font groupFont() 
 	{
@@ -509,9 +509,9 @@ public class FontDialog extends BaseDialog
 	}
 
 	/**
-	 * ±àÂëÑ¡ÔñÊÂ¼şµÄ¼àÌı¶¯×÷
+	 * ç¼–ç é€‰æ‹©äº‹ä»¶çš„ç›‘å¬åŠ¨ä½œ
 	 * 
-	 * @author Ã×Ç¿
+	 * @author ç±³å¼º
 	 *
 	 */
 	class EncodeAction implements ActionListener 
